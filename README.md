@@ -6,13 +6,13 @@
 
 ## Thành viên
 
-| Họ tên | Mã sinh viên | Vai trò chính |
-|---|---|---|
-| Nguyễn Thị Kiều Anh |2412380009|Group Coordinator, Game Mechanisms Design|
-| Phùng Khánh Linh |2412380028|Scenario & Dialogue Writer|
-| Nguyễn Minh Trang |2412380050|UI/UX Design|
-| Hoàng Minh Nhật |2412380039|Code & Tech Developer|
-| Lê Đắc Phú Minh |2412380030|Financial Content Designer|
+| Họ tên | Mã sinh viên | Vai trò chính | Output |
+|---|---|---|---|
+| Nguyễn Thị Kiều Anh |2412380009|Group Coordinator, Game Mechanisms Design|Master roadmap & quản lý tiến độ dự án, Game rulebook, luật vay margin, phí mở khóa báo cáo phân tích, bảng tổng kết ROI & Widget Checklist 5 tiêu chí| 
+| Phùng Khánh Linh |2412380028|Scenario & Dialogue Writer|Kịch bản & thoại tương tác với 5 Founder (gồm bẫy Red Flags),Bộ bài học kinh nghiệm & bóc tách nguyên nhân Lời/Lỗ sau mỗi vòng|
+| Nguyễn Minh Trang |2412380050|UI/UX Design|Artwork 5 Founder, màn hình Gameplay, BCTC 3 bảng và Bảng tổng kết ROI, Design System: Icon set, nút bấm, widget checklist 5 tiêu chí|
+| Hoàng Minh Nhật |2412380039|Code & Tech Developer|Tích hợp Front-end & Back-end engine tính toán tài chính, Kiểm thử logic test cases, debug và đảm bảo hệ thống vận hành mượt mà|
+| Lê Đắc Phú Minh |2412380030|Financial Content Designer|Bộ Báo cáo tài chính 3 bảng (3-Statement) cho 5 startups, Mô hình bài toán tài chính, bẫy định giá và công thức|
 
 ## Mô tả ngắn về sản phẩm
 
