@@ -1,4 +1,4 @@
-# **SOLUTION STRUCTURE**
+# **SOLUTION AND STRUCTURE**
 
 ## **1\. Product Direction**
 
