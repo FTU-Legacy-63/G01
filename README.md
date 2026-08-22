@@ -16,14 +16,14 @@
 
 ## Mô tả ngắn về sản phẩm
 
-**Pitch & Ledger** là nền tảng game mô phỏng đầu tư (Gamified Investment Simulator) dành cho học sinh, sinh viên và nhà đầu tư F0 — những người muốn học hỏi về phân tích nền tảng doanh nghiệp nhưng thiếu môi trường thực hành thực tế. Sản phẩm đưa người chơi vào vai nhà đầu tư Pitch & Ledger, đối mặt với 5 thương vụ gọi vốn startup để phân tích báo cáo tài chính, thẩm định thông tin và đưa ra quyết định phân bổ nguồn vốn 100 tỷ Việt Nam đồng. **Pitch & Ledger** được thiết kế để người chưa có nhiều kinh nghiệm vẫn có thể học cách phát hiện các "bẫy" thông tin từ Founder, đọc hiểu sức khỏe nội tại của doanh nghiệp và đánh giá hiệu quả đầu tư. Từ đó, người dùng hình thành tư duy phân tích dữ liệu thực tế thay vì đầu tư dựa trên cảm tính hay trào lưu.
-Nên viết khoảng 3 đến 6 câu.
+**Pitch & Ledger** là nền tảng game mô phỏng đầu tư **(Gamified Investment Simulator)** dành cho học sinh, sinh viên và nhà đầu tư F0 — những người muốn học hỏi về phân tích nền tảng doanh nghiệp nhưng thiếu môi trường thực hành thực tế. Sản phẩm đưa người chơi vào vai nhà đầu tư Pitch & Ledger, đối mặt với 5 thương vụ gọi vốn startup để phân tích báo cáo tài chính, thẩm định thông tin và đưa ra quyết định phân bổ nguồn vốn 100 tỷ Việt Nam đồng. **Pitch & Ledger** được thiết kế để người chưa có nhiều kinh nghiệm vẫn có thể học cách phát hiện các "bẫy" thông tin từ Founder, đọc hiểu sức khỏe nội tại của doanh nghiệp và đánh giá hiệu quả đầu tư. Từ đó, người dùng hình thành tư duy phân tích dữ liệu thực tế thay vì đầu tư dựa trên cảm tính hay trào lưu.
+
 
 ## Vấn đề sản phẩm giải quyết
 
 **Vấn đề:** Các nhà đầu tư mới và sinh viên ngành tài chính thường nắm vững lý thuyết nhưng lại thiếu kỹ năng thực hành thẩm định (due diligence). Họ dễ bị thuyết phục bởi các bài thuyết trình bóng đòn, chỉ số ảo hoặc lời hứa hẹn từ Founder mà không biết cách đối chiếu với các thông tin khác như báo cáo tài chính hay nội tại doanh nghiệp. Đồng thời, thói quen phân bổ vốn ngẫu hứng khiến họ sớm cạn kiệt dòng tiền trước khi gặp các thương vụ tốt hơn. Trong khi đó, rủi ro mất tiền thật khiến họ e ngại thực hành trên thị trường thực tế.
 
-**Đối tượng gặp vấn đề: **Học sinh, sinh viên kinh tế/tài chính và nhà đầu tư cá nhân mới gia nhập thị trường (F0) — những người thiếu công cụ thực hành an toàn và muốn nâng cao năng lực đánh giá doanh nghiệp.
+**Đối tượng gặp vấn đề:** Học sinh, sinh viên kinh tế/tài chính và nhà đầu tư cá nhân mới gia nhập thị trường (F0) — những người thiếu công cụ thực hành an toàn và muốn nâng cao năng lực đánh giá doanh nghiệp.
 
 **Vì sao đáng quan tâm:** Thiếu kỹ năng thẩm định và quản trị dòng tiền khiến các nhà đầu tư F0 dễ gặp thua lỗ nặng nề do chạy theo phong trào (hype buying) và sập bẫy bất đối xứng thông tin. Việc không có môi trường luyện tập trước khi rót vốn thật là nguyên nhân chính khiến nhiều người rút lui khỏi thị trường trong thua lỗ.
 
