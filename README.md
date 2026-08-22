@@ -1,372 +1,309 @@
-# PITCH & LEDGER – GAME SIMULATION
+# PITCH & LEDGER – GAME SIMULATION - CHECKPOINT WEEK 1
 
-## Thành viên nhóm
+## Team Members
 
-| Thành viên          | Mã sinh viên |
-| ------------------- | ------------ |
-| Nguyễn Thị Kiều Anh | 2412380009   |
-| Phùng Khánh Linh    | 2412380028   |
-| Nguyễn Minh Trang   | 2412380050   |
-| Hoàng Minh Nhật     | 2412380039   |
-| Lê Đắc Phú Minh     | 2412380030   |
+| **Member**          | **Student ID** |
+| ------------------- | -------------- |
+| Nguyễn Thị Kiều Anh | 2412380009     |
+| Phùng Khánh Linh    | 2412380028     |
+| Nguyễn Minh Trang   | 2412380050     |
+| Hoàng Minh Nhật     | 2412380039     |
+| Lê Đắc Phú Minh     | 2412380030     |
 
 ---
 
-## Các Problem Candidates
+# Problem Candidates
 
-### 1. Pitch & Ledger – Shark Tank Simulation *(Selected)*
+| **Candidate**                                         | **Target User**                                                                                                                                    | **Task / Decision**                                                                                                                      | **Difficulty**                                                                                                                                                                                                                                                                                                                                                                                                                                                     | **Financial Relevance**                                                                                            | **Feasibility**                                                                                                                                                                                                                                                               |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pitch & Ledger (Shark Tank Simulation) – Selected** | High school and university students in Economics, Finance, and Business Administration, as well as individual investors who are new to the market. | Practice business due diligence, financial statement analysis, cash flow management, and experience different investment risk scenarios. | New investors and students often understand financial theory but lack practical experience in evaluating investment opportunities. They may be persuaded by attractive pitches, impressive presentations, or manipulated/isolated metrics without knowing how to cross-check them against financial statements and the company's fundamentals. They may also make emotionally driven investment decisions and suffer significant losses when the investment fails. | Corporate Finance & Venture Capital, including **Corporate Finance, Valuation, and Financial Statement Analysis**. | The game can be structured into independent, turn-based modules. Each startup can be treated as a separate case, making the system relatively straightforward to implement. The main concern is whether sufficient and accessible data is available to build realistic cases. |
 
-**Target User:**
-Học sinh, sinh viên các khối ngành Kinh tế/Tài chính/Quản trị và các nhà đầu tư cá nhân mới gia nhập thị trường.
+### Pitch & Ledger – Difficulty Assessment
 
-**Task / Decision:**
-Thực hành thẩm định doanh nghiệp, luyện tập đọc báo cáo tài chính, học cách quản lý dòng tiền, trải nghiệm các kịch bản đầu tư rủi ro.
+#### Specific
 
-**Difficulty:**
+The player is required to evaluate **six investment deals** and make one of three key decisions:
 
-* **Specific:**
-  Nhiệm vụ là thẩm định 6 thương vụ; quyết định **Deal / Reject / Offer**. Khó ở bất đối xứng thông tin và các bẫy BCTC.
+* **Deal**
+* **Reject**
+* **Offer**
 
-* **Relevant:**
-  Chuyên môn tài chính gồm:
+The main difficulty comes from:
 
-  * Đọc BCTC
-  * Unit Economics
-  * Burn Rate
-  * Runway
-  * Định giá
-  * Thẩm định đầu tư
+* Information asymmetry
+* Financial statement traps
+* Incomplete or misleading information
+* The need to cross-check information from multiple sources
 
-* **Meaningful:**
-  Rèn luyện kỹ năng thực hành phân tích doanh nghiệp và tư duy hoài nghi số liệu cho sinh viên / F0.
+#### Relevant
 
-* **Supportable:**
-  Logic dạng tĩnh (turn-based rời rạc). Mỗi startup là một file độc lập, tính toán trừ điểm IP và P/S không quá khó để code.
+The game requires practical financial knowledge, including:
 
-* **Feasible:**
-  Chưa chắc về việc liệu data có access được không và có đủ data để xây game không.
-
-  Kiến trúc game dạng các vòng độc lập gồm 6 module startup. Coder chỉ cần viết một khung giao diện mẫu, sau đó nạp data của từng startup vào.
-
-**Financial Relevance:**
-Nghiệp vụ tài chính doanh nghiệp và đầu tư mạo hiểm:
-
-* Corporate Finance
-* Valuation
 * Financial Statement Analysis
+* Unit Economics
+* Burn Rate
+* Runway
+* Valuation
+* Investment Due Diligence
 
-**Problem:**
-Các nhà đầu tư mới hoặc sinh viên thường nắm vững lý thuyết nhưng thiếu kỹ năng thực hành thẩm định dự án để đưa ra quyết định đầu tư.
+#### Meaningful
 
-Họ dễ bị thuyết phục bởi những dự án hay, hoành tráng, hình thức đẹp mắt hoặc các chỉ số ảo mà không biết cách đối chiếu với các thông tin khác như báo cáo tài chính và nội tại doanh nghiệp.
+The game aims to develop:
 
-Họ thường đầu tư theo cảm tính và đến khi dự án không thành công, họ có thể chịu khoản lỗ lớn và phải rút khỏi thị trường.
+* Practical company analysis skills
+* Financial decision-making skills
+* Critical thinking
+* A healthy skepticism toward financial information
 
----
+This is particularly meaningful for students and first-time investors (F0).
 
-### 2. Lifevest – Personal Financial Management
+#### Supportable
 
-**Target User:**
-Gen Z, người đi làm không có hiểu biết nhiều về tài chính và đầu tư nhưng muốn tham gia thị trường để tăng thêm thu nhập từ dòng tiền nhàn rỗi.
+The game can use a static, turn-based structure.
 
-Có thể phát triển thành công cụ hỗ trợ broker tại các công ty chứng khoán.
+Each startup can be developed as an independent case file. The system can calculate scores based on investment decisions and financial indicators such as:
 
-**Task / Decision:**
+* IP
+* P/S
 
-* Quản lý dòng tiền cá nhân.
-* Phản ứng trước các biến cố như:
+This structure reduces the complexity of the game logic.
 
-  * Kinh tế đóng băng / khủng hoảng như COVID-19
-  * Bệnh tật
-  * Lập gia đình
-  * Các biến cố tài chính bất ngờ
-* Phân bổ tài sản vào:
+#### Feasible
 
-  * Cổ phiếu
-  * Trái phiếu
-  * Quỹ đầu tư mạo hiểm
-  * Quỹ hưu trí
-  * Các tài sản khác
+The main concern is whether the team can access enough reliable data to construct realistic investment cases.
 
-**Difficulty:**
-
-* **Specific:**
-  Task khá rộng, bao gồm cả đời sống, hôn nhân, y tế và đầu tư. Target user bị phân mảnh giữa B2C (Gen Z) và B2B (Broker).
-
-* **Relevant:**
-  Thuộc lĩnh vực Tài chính cá nhân và Tài chính hành vi.
-
-* **Meaningful:**
-  Giúp người trẻ nhận thức tầm quan trọng của:
-
-  * Quỹ dự phòng
-  * Quản lý dòng tiền
-  * Phân bổ tài sản
-  * Chuyển dịch tài sản khi về già
-
-* **Supportable:**
-  State management phức tạp vì các biến số đời sống ở tuổi 20 có thể ảnh hưởng đến tuổi 60, dễ phát sinh lỗi dây chuyền.
-
-* **Feasible:**
-  Dễ bị **scope creep** do sa đà vào việc viết các kịch bản drama đời sống thay vì tập trung vào tài chính.
-
-**Financial Relevance:**
-Thuộc mảng Tài chính cá nhân và kinh tế vĩ mô. Tuy nhiên, tính chất kỹ thuật tài chính tương đối thấp.
+However, the architecture can be designed as **six independent startup modules**. The developer only needs to build one core interface and then load the financial and scenario data for each startup into the system.
 
 ---
 
-### 3. Green Finance & ESG Rating Platform
+# 2. Lifevest – Personal Financial Management
 
-**Tên:**
-**Green Finance & ESG Rating Platform – Nền tảng thẩm định ESG & định giá tài chính xanh**
+| **Candidate**                                | **Target User**                                                                                                                                                                                                                                             | **Task / Decision**                                                                                                                                                                                                            | **Difficulty**                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | **Financial Relevance**                                                                                  | **Feasibility**                                                                                                           |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Lifevest (Personal Financial Management)** | Gen Z and young employees with limited financial and investment knowledge who want to participate in financial markets and generate additional returns from idle cash. It could potentially serve as a supporting tool for brokers at securities companies. | Manage personal cash flow; respond to unexpected life events such as economic downturns, illness, marriage, etc.; allocate assets among stocks, bonds, venture capital funds, retirement funds, and other investment vehicles. | Young people entering the workforce often receive their first stable income without knowing how to allocate it effectively. They may not anticipate unexpected events or have clear long-term financial goals such as buying a house. As a result, they may experience financial difficulties despite having a relatively stable income. Securities companies also tend to approach F0 investors through relatively generic surveys and recommendations, which may not be engaging enough. | Personal Finance & Behavioral Finance. However, the technical financial component is relatively limited. | Potentially feasible, but the scope is broad and may easily expand beyond financial management into lifestyle simulation. |
 
-**Target User:**
+### Specific
 
-* **Đối tượng chính:**
+The task is relatively broad because it covers:
 
-  * Chuyên viên Phân tích
-  * Chuyên viên Ngân hàng Đầu tư (IB) tại các Công ty Chứng khoán
-  * Bộ phận Thẩm định Tín dụng Xanh tại các Ngân hàng Thương mại
+* Personal life
+* Marriage
+* Healthcare
+* Investment
+* Long-term financial planning
 
-* **Đối tượng thứ cấp:**
+The target users are also fragmented between:
 
-  * Doanh nghiệp niêm yết / SMEs
-  * Giới nghiên cứu
-  * Giảng viên
-  * Học viên Tài chính cần bộ dữ liệu ESG chuẩn hóa tại Việt Nam
+* **B2C:** Gen Z / young employees
+* **B2B:** Brokers
 
-**Task / Decision:**
-Thu thập và đối chiếu dữ liệu Báo cáo tài chính 3 bảng với các chỉ số phi tài chính:
+### Relevant
 
-* Môi trường (Environmental)
-* Xã hội (Social)
-* Quản trị (Governance)
+The concept is related to:
 
-Đồng thời:
+* Personal Finance
+* Behavioral Finance
 
-* Quét các tín hiệu **Greenwashing**
-* Đánh giá rủi ro địa chính trị
-* Đánh giá rủi ro đứt gãy chuỗi cung ứng
-* Đối chiếu với các chuẩn quốc tế:
+### Meaningful
 
-  * GRI
-  * ISSB
-  * SASB
-  * CBAM
-  * EUDR
+The game could help young people understand the importance of:
 
-**Difficulty / Problem:**
+* Emergency funds
+* Cash flow management
+* Asset allocation
+* Long-term financial planning
+* Wealth transition in later life
 
-### Bất đối xứng thông tin & Dữ liệu phân tán
+### Supportable
 
-Dữ liệu ESG và dữ liệu tài chính thường nằm ở nhiều nguồn khác nhau và chưa được chuẩn hóa.
+State management would be relatively complex because decisions made at age 20 could affect financial outcomes at age 60, creating potential cascading dependencies and system errors.
 
-### Rủi ro Greenwashing
+### Feasible
 
-Doanh nghiệp có thể công bố các thông tin ESG tích cực nhưng không phản ánh đầy đủ thực trạng hoạt động.
-
-### Đứt gãy giữa dữ liệu ESG & tài chính
-
-Thiếu công cụ quy đổi các chỉ số ESG, chẳng hạn lượng phát thải Carbon, thành **con số tác động trực tiếp lên BCTC 3 bảng và dòng tiền (Cash Flow)**.
-
-**Financial Relevance:**
-
-* Tích hợp ESG Rating giúp CTCK tiếp cận nguồn vốn từ các Quỹ đầu tư tác động (Impact Investing).
-* Nâng tầm báo cáo phân tích.
-* Thúc đẩy dịch vụ IB.
-* Hỗ trợ tín dụng xanh.
-* Cải thiện quản trị rủi ro chuỗi cung ứng.
-
-**Feasibility:**
-Khả thi ở mức trung bình.
-
-Có thể thu hẹp scope vào việc xây dựng **Model thẩm định & Chấm điểm ESG Scorecard tích hợp BCTC 3 bảng** cho các doanh nghiệp niêm yết đại diện cho các ngành xuất khẩu chủ lực.
-
-Tuy nhiên, việc tiếp cận dữ liệu cần thời gian và yêu cầu độ chính xác cao.
+There is a significant risk of **scope creep**, as the project could become overly focused on creating dramatic life scenarios instead of maintaining its core focus on financial decision-making.
 
 ---
 
-### 4. Grow a Tree
+# 3. Green Finance & ESG Rating Platform
 
-**Target User:**
-Bất kỳ ai muốn luyện tập ra quyết định trong bối cảnh môi trường bất định mà không muốn trải nghiệm sự "khô khan" của tài chính.
+| **Candidate**                                                                                 | **Target User**                                                                                                                                                                                                                                                                              | **Task / Decision**                                                                                                                                                                                                                                                                          | **Difficulty**                                                                                                                                                                                                                                                                                                                                                                                                                                            | **Financial Relevance**                                                                                                                                                                                                               | **Feasibility**                                                                                                                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Green Finance & ESG Rating Platform – ESG Assessment & Green Financial Valuation Platform** | **Primary:** Financial analysts and investment banking professionals at securities companies, as well as green credit assessment teams at commercial banks. **Secondary:** Listed companies/SMEs and researchers, lecturers, and finance students who need standardized ESG data in Vietnam. | Collect and cross-check three-statement financial data with non-financial indicators (Environmental, Social, Governance); detect greenwashing signals; assess geopolitical risks and supply-chain disruption risks based on international standards such as GRI, ISSB, SASB, CBAM, and EUDR. | **Information asymmetry & fragmented data:** ESG and financial information are often dispersed across different sources. **Greenwashing risk:** Companies may present positive ESG information without fully reflecting their actual performance. **Disconnect between ESG and financial data:** There is a lack of tools that convert ESG indicators, such as carbon emissions, into measurable impacts on the three financial statements and cash flow. | A standardized ESG Rating could help securities companies attract capital from Impact Investment Funds, improve equity research, support Investment Banking and Green Credit activities, and strengthen supply-chain risk management. | **Moderately feasible:** The scope could be narrowed to an ESG assessment model and ESG Scorecard integrated with the three financial statements for representative listed companies in key export industries. However, accessing sufficiently accurate data would require significant time and effort. |
 
-**Task:**
+### Key Problems
 
-* Monitor sự sống của cây.
-* Thu thập dữ liệu liên quan tới:
+#### Information Asymmetry & Data Fragmentation
 
-  * Sự sống của cây
-  * Môi trường xung quanh
+ESG and financial information is often distributed across multiple sources and is not consistently standardized.
 
-**Decision:**
+#### Greenwashing Risk
 
-* Allocate bao nhiêu nước?
-* Allocate bao nhiêu phân bón?
-* Có sử dụng vật phẩm phòng ngừa thiên tai không?
-* Có mua đồ từ cửa hàng không?
-* Có mua dự báo thời tiết không?
+Companies may disclose positive ESG information that does not fully reflect their actual environmental, social, or governance performance.
 
-**Difficulty:**
+#### Disconnect Between ESG & Financial Data
 
-* Không biết tương lai cửa hàng sẽ cung cấp những vật phẩm gì.
-* Không biết chính xác hiện tại cây còn bao nhiêu sự sống.
-* Không biết chính xác ngày mai thời tiết sẽ như thế nào.
-* Không biết chính xác đặc tính của từng loại cây.
-
-**Financial Relevance:**
-
-Game có các yếu tố tương đồng với vấn đề tài chính:
-
-* Nguồn lực hữu hạn:
-
-  * Sự sống của cây
-  * Nước
-  * Phân bón
-* Có sự không chắc chắn.
-* Các quyết định ảnh hưởng đến sự sống của cây.
-* Một số quyết định mang tính **irreversible**.
-
-**Feasibility:**
-
-* Nhóm có thể giải quyết một phần có ý nghĩa trong 7 tuần: khả năng cao là có.
-* Có thể tập trung vào việc luyện tập ra quyết định trong bối cảnh tương lai bất định.
-* Có thể thu hẹp user, task và context.
-* Không cần hệ thống hoặc dữ liệu mà nhóm không thể tiếp cận.
-* Game giúp người chơi hoàn thiện decision-making process thay vì phụ thuộc vào số liệu thực tế.
+There is a lack of tools capable of converting ESG indicators, such as carbon emissions, into **measurable financial impacts on the three financial statements and cash flow**.
 
 ---
 
-## Target User được lựa chọn
+# 4. Grow a Tree
 
-Người dùng chúng tôi hướng đến là **những nhà đầu tư mới gia nhập thị trường**.
+| **Candidate**   | **Target User**                                                                                                           | **Task / Decision**                                                                                                                                                                                                                                     | **Difficulty**                                                                                                                                                                    | **Financial Relevance**                                                                                                                                                                 | **Feasibility**                                                                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Grow a Tree** | Anyone who wants to practice decision-making under uncertainty without experiencing the “dryness” of traditional finance. | **Tasks:** Monitor the tree's health and collect data related to the tree and its surrounding environment. **Decisions:** Allocate water and fertilizer; purchase disaster-prevention items; purchase items from the store; purchase weather forecasts. | The player does not know what items the store will offer in the future, the tree's exact current health level, tomorrow's weather conditions, or the characteristics of the tree. | The game involves limited resources, uncertainty, and irreversible decisions. Resources include tree health, water, and fertilizer. Decisions directly affect the survival of the tree. | Highly feasible within seven weeks. The scope can be narrowed to practicing decision-making under uncertainty. The game does not require access to external or real-world datasets. |
 
-Họ là những người còn thiếu kiến thức và kinh nghiệm trong việc sử dụng các thông tin công khai sẵn có để nghiên cứu nền tảng của các công ty và đưa ra quyết định đầu tư đúng đắn.
+### Financial Relevance
 
----
+The concept reflects several fundamental financial decision-making characteristics:
 
-## User Task / Decision
+* **Limited resources**
 
-Người chơi sẽ **navigate trong số những nguồn thông tin được cung cấp về một doanh nghiệp** để đưa ra quyết định mấu chốt:
+  * Tree health
+  * Water
+  * Fertilizer
+* **Uncertainty**
+* **Trade-offs**
+* **Irreversible decisions**
 
-> **Đầu tư hay không, và nếu đầu tư thì đầu tư bao nhiêu?**
-
----
-
-## Draft Problem Statement
-
-> **Target user gặp khó khăn trong việc lựa chọn đầu tư hay không đầu tư, và nếu đầu tư thì đầu tư bao nhiêu trong bối cảnh nguồn vốn hữu hạn, thông tin bất cân xứng và tương đối nhiều thông tin để xử lý.**
-
----
-
-## Vì sao đây là vấn đề tài chính hoặc ngân hàng?
-
-Vì một trong những vấn đề cốt lõi của tài chính là **cân đối giữa rủi ro và lợi nhuận**.
-
-Điều này xuất phát từ hệ quả của hai yếu tố:
-
-1. **Tài nguyên là hữu hạn.**
-2. **Những lựa chọn thường không thể được lựa chọn lại.**
-
-Do đó, người ra quyết định cần đánh giá thông tin, cân nhắc rủi ro – lợi nhuận và quyết định cách phân bổ nguồn vốn hữu hạn.
+The game therefore provides an intuitive environment for practicing decision-making under uncertainty.
 
 ---
 
-## Đóng góp của từng thành viên
+# Selected Target User
 
-| Thành viên              | Đóng góp                                                                                                                |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Nguyễn Thị Kiều Anh** | Tìm, mô tả và xác định data cho candidate 3; xác định tính khả thi của candidate 3; tổng hợp README và ghi decision log |
-| **Phùng Khánh Linh**    | Tìm, mô tả và xác định data cho candidate 4; xác định tính khả thi của candidate 4                                      |
-| **Nguyễn Minh Trang**   | Đánh giá tính khả thi; tìm và mô tả candidate 1, 2 (2 game simulation được lựa chọn)                                    |
-| **Hoàng Minh Nhật**     | Phân tích target user; viết user task & decision                                                                        |
-| **Lê Đắc Phú Minh**     | Xác định draft problem statement & finance – banking relevance của đề tài lựa chọn                                      |
+Our target users are **new investors entering the financial market**.
+
+They are individuals who lack sufficient knowledge and experience in using publicly available information to research the fundamentals of listed companies and make informed investment decisions.
 
 ---
 
-# Feedback từ Checkpoint
+# User Task / Decision
+
+Players will navigate through different sources of information provided about a company and make the key decision:
+
+> **Should I invest, and if so, how much should I invest?**
+
+---
+
+# Draft Problem Statement
+
+> **Target users struggle to decide whether to invest and how much to invest in a context where capital is limited, information is asymmetric, and there is a relatively large amount of information to process.**
+
+---
+
+# Finance – Banking Relevance
+
+One of the fundamental problems in finance is the need to **balance risk and return**.
+
+This arises from two fundamental conditions:
+
+1. **Resources are limited.**
+2. **Investment choices are often difficult or impossible to reverse.**
+
+Therefore, investors need to evaluate available information, assess risk and return, and decide how to allocate their limited capital among different investment opportunities.
+
+---
+
+# Member Contributions
+
+| **Member**              | **Contribution**                                                                                                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nguyễn Thị Kiều Anh** | Researched, described, and identified data for Candidate 3; assessed the feasibility of Candidate 3; consolidated the README and maintained the decision log. |
+| **Phùng Khánh Linh**    | Researched, described, and identified data for Candidate 4; assessed the feasibility of Candidate 4.                                                          |
+| **Nguyễn Minh Trang**   | Assessed feasibility; researched and described Candidates 1 and 2 (the two selected game simulations).                                                        |
+| **Hoàng Minh Nhật**     | Analyzed the target user; defined the user task and decision.                                                                                                 |
+| **Lê Đắc Phú Minh**     | Developed the draft problem statement and identified the finance–banking relevance of the selected topic.                                                     |
+
+---
+
+# Feedback from Checkpoint
 
 ### Feedback 1
 
-Ý tưởng **Pitch & Ledger** có tính thực tiễn tốt khi đánh đúng vào tâm lý F0 / sinh viên thiếu kinh nghiệm thực hành thẩm định.
+The **Pitch & Ledger** idea has strong practical relevance because it addresses the behavior of F0 investors and students who lack practical experience in financial due diligence.
 
-Tuy nhiên, cần đảm bảo giữ trọng tâm vào **toán tài chính**, đặc biệt:
+However, the project needs to maintain a strong focus on **financial calculations and analysis**, particularly:
 
-* Đọc BCTC 3 bảng
+* Three-statement financial statement analysis
 * Burn Rate
-* Định giá
+* Valuation
 
-Thay vì sa đà vào tính giải trí thuần túy.
+rather than becoming primarily entertainment-oriented.
 
 ### Feedback 2
 
-Cần kiểm soát chặt chẽ scope dữ liệu trong 7 tuần.
+The scope of data needs to be strictly controlled within the seven-week development period.
 
-Tránh mở quá nhiều tính năng phức tạp như **Chatbot AI tự do cho Founder**, khiến kịch bản bị lệch khỏi các công thức kiểm tra tài chính cốt lõi.
+The team should avoid overly complex features such as a **free-form AI chatbot for the Founder**, as this could shift the scenario away from the core financial analysis and verification mechanisms.
 
 ---
 
-# Revision sau Checkpoint
+# Revision After Checkpoint
 
-### Nội dung đã thay đổi
+### Change Implemented
 
-Chuyển toàn bộ tương tác thẩm định với Founder sang dạng **Cây câu hỏi trắc nghiệm nhánh (Preset Decision Trees)** để kiểm soát 100% tính chính xác của các chỉ số BCTC và bẫy tài chính.
+All interactions with the Founder during the due diligence process have been changed to a **Preset Decision Tree** format.
 
-### Lý do thay đổi
+This allows the team to control the accuracy of:
 
-Tiếp thu phản hồi từ checkpoint để:
+* Financial statement indicators
+* Financial traps
+* Decision outcomes
+* Scoring logic
 
-* Đảm bảo hàm lượng chuyên môn tài chính doanh nghiệp.
-* Tránh lỗi hệ thống khi kiểm thử.
-* Đảm bảo tính khả thi cao trong 7 tuần.
+### Reason for the Change
+
+The revision was made in response to checkpoint feedback in order to:
+
+* Maintain the corporate finance focus of the project.
+* Avoid system errors during testing.
+* Ensure that the project remains feasible within seven weeks.
 
 ### Evidence / Commit
 
-Updated `README.md` (bản hiện tại và giữ nguyên những ý tưởng đã chốt).
+Updated `README.md` while maintaining the core ideas that had already been agreed upon.
 
 ---
 
 # Decision
 
-**Quyết định: Keep – Idea Pitch & Ledger**
+**Decision: KEEP – Pitch & Ledger**
 
-Giữ nguyên:
+The team will maintain:
 
-* Problem Statement
-* Target User
-* User Task / Decision
+* The current problem statement
+* The selected target user
+* The user task / decision
 
-Đồng thời thu hẹp scope sản phẩm về **kịch bản đóng gồm 5–6 thương vụ thẩm định chuẩn hóa**.
+The product scope will be narrowed to a **closed set of 5–6 standardized investment due diligence cases**.
 
 ---
 
 # Open Questions for Week 2
 
-## 1. Main Output
+### 1. What is the Main Output?
 
-**Main output cụ thể của sản phẩm là gì?**
+What is the specific main output of the product?
 
-Game hướng tới giá trị gì riêng biệt và có thể áp dụng cho thực tiễn, ngoài việc:
+What unique value does the game provide that can be applied to real-world situations beyond:
 
-* Giảng dạy
-* Giải trí
-* Cung cấp kiến thức
-* Mang lại cơ hội trải nghiệm cho người tham gia?
+* Education
+* Entertainment
+* Knowledge acquisition
+* Providing participants with investment experience?
 
-## 2. Product Pattern
+### 2. What Product Pattern Fits the Main Output?
 
-**Product pattern nào phù hợp nhất với main output đó?**
+Which product pattern is most appropriate for delivering the identified main output and value proposition?
 
-Cần xác định dạng sản phẩm / interaction pattern phù hợp để truyền tải giá trị cốt lõi của Pitch & Ledger.
+### 3. What Is the Minimum Viable Product?
 
-## 3. MVP
+What is the minimum MVP that can still preserve the **core value of the user task**?
 
-**MVP tối thiểu nào vẫn giữ được giá trị cốt lõi của user task?**
+The MVP should ideally allow players to:
 
-MVP cần đảm bảo người chơi vẫn có thể:
-
-1. Tiếp nhận thông tin về doanh nghiệp.
-2. Phân tích các thông tin tài chính quan trọng.
-3. Nhận diện các dấu hiệu rủi ro / bẫy tài chính.
-4. Đưa ra quyết định đầu tư.
-5. Quyết định mức vốn đầu tư trong điều kiện nguồn lực hữu hạn.
+1. Access information about a company.
+2. Analyze key financial information.
+3. Identify financial risks and potential financial statement traps.
+4. Make an investment decision.
+5. Decide how much capital to allocate under limited resources.
