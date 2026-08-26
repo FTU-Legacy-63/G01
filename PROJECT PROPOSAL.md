@@ -2,8 +2,9 @@
 
 1. **Problem Statement**
 
-*“Beginner investors often possess solid theoretical knowledge but lack practical due diligence skills.”*  
-They can be easily influenced by charismatic pitches and vanity metrics without critically cross-checking financial statements and business fundamentals. As a result, impulsive capital allocation can quickly deplete their available funds, while the risks of real-world financial markets limit their opportunities to practice hands-on investment decision-making.
+_Year 3–4 university students often possess a strong foundation in finance and investment theory but have limited opportunities to practice the end-to-end due diligence process used to evaluate start-ups._
+
+The project aims to bridge the gap between financial theory and practical due diligence by simulating the start-up investment process. Students can analyze companies, evaluate financial and business fundamentals, conduct Q&A with founders, identify risks, and make informed investment decisions in a risk-free environment.
 
 2. **Target User**
 
@@ -33,23 +34,55 @@ They can be easily influenced by charismatic pitches and vanity metrics without 
 
 7. **Product Logic & Evaluation Workflow**
 
-START  
-  ↓  
-Receive entrepreneur pitch  
-  ↓  
-Review basic company information  
-  ↓  
-Investigate company  
- ├── Financial information  
- ├── Industry information  
- └── Ask entrepreneur questions (Q\&A)  
-  ↓  
-Evaluate company  
-  ↓  
-Invest / Reject  
-  ↓  
-Repeat for remaining companies  
-  ↓  
-Portfolio results  
-  ↓  
-Performance \+ feedback  
+START
+  ↓
+Receive Entrepreneur Pitch
+  ↓
+Review Basic Company Information
+  ↓
+General Information
+  ├── Product Description
+  │    ├── Problem
+  │    └── Solution
+  ├── Industry Information
+  │    ├── Market Size & Growth
+  │    └── Industry Attractiveness
+  ├── Company Overview
+  │    └── Business Model
+  └── Financial Information (Financial Statements)
+      
+  ↓
+Investigation: Ask Entrepreneur Questions (Q&A)
+  ├── Map questions with provided information
+  └── Specific due diligence questions
+  ↓
+Evaluation: 
+  ├── Market Size & Industry Attractiveness
+  ├── Business Model Outlook
+  ├── Financial Health
+  │    ├── Revenue
+  │    ├── Growth
+  │    ├── Margin
+  │    └── Cash Flow
+  ├── Product & Competitive Advantage
+  └── Management / Founder's Experience
+  ↓
+Investment Decision (Checklist)
+  ↓
+Invest / Negotiate / Reject
+  ├── Reject → Move to next company
+  └── Invest → Negotiate Investment Terms
+  ↓
+Repeat for Remaining Companies
+  ↓
+Portfolio Results
+  ├── Portfolio Composition
+  ├── Investment Performance
+  └── Overall Portfolio Return
+  ↓
+Performance + Feedback
+  ├── Investment Decision Quality
+  ├── Strengths & Weaknesses
+  └── Personalized Feedback
+  ↓
+END
