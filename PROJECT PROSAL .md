@@ -23,10 +23,8 @@ Year 3–4 university students aspiring to pursue careers in Venture Capital, Pr
 
 | Output Component | Description |
 | ----- | ----- |
-| **Investment Decision** | Reckon which project the player has invested, and how much is spent for each project |
-| **Performance & Score** | Overall decision quality score based on diligence depth and deal terms. |
-| **Portfolio Status** | Updated fund cash balance, active holdings, and projected fund IRR. |
-| **Learning Feedback** | Personalized breakdown of analytical strengths, blind spots, and red flags missed. |
+| **Risk & Red Flag detection capability** | Evaluates the player's acumen in identifying core operational risks and financial statement traps (red flags)—such as artificial revenue growth, hidden COGS, negative cash flow, or unsustainable burn rates—through their question selections during the Investigation (Q&A) phase and their final Checklist evaluation.|
+| **Capital allocation efficiency** | Evaluates the player's risk management mindset and capital efficiency, demonstrated by whether their allocated investment amount aligns appropriately with each company's evaluated risk profile, while optimizing overall portfolio returns under budget constraints.|
 
 6. **Product Pattern: A financial learning game**  
 * An educational web simulation placing students in the role of a Venture Capitalist evaluating early-stage startups across various industries.  
