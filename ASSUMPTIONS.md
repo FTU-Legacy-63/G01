@@ -1,0 +1,3 @@
+- Return phụ thuộc hoàn toàn vào báo cáo tài chính  
+- Return được giả định theo scenario  
+- User nhập số liệu chính xác
