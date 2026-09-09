@@ -1,0 +1,26 @@
+## **INPUT \- LOGIC \- OUTPUT MAPPING** 
+
+| Input | Financial meaning | Rule/Calculation/Process | Output |
+| :---: | :---: | :---: | ----- |
+| net\_margin  | Overall profit retained per dollar of sales after all operational, financial, and tax expenses | Compare against industry benchmark  $\frac{Net\ income}{Revenue}$ | **Net profitability status Bottom-line Health:** *•* \<Benchmark: "High Burn / Unprofitable" • ≥Benchmark: "Healthy Bottom-line" |
+| gross\_margin | Product profitability & pricing power | Compare against industry benchmark  $\frac{Gross\ profit}{Revenue}$  | **Cost Control Status:** • \<Benchmark: "Abnormal / High Cost" • ≥Benchmark: "Healthy Margin" **Chart:** Startup GM vs. Industry Median |
+| return\_on\_assets | Asset utilization efficiency | $\frac{Net\ income}{Total\ assets}$ | **Asset efficiency rating**  • \<Benchmark: "Capital-Intensive / Low Turnover" • ≥Benchmark: "Asset-Light / High Efficiency" |
+| earnings\_per\_share | Earnings per share & equity return | Compare EPS against target funding valuation | **Valuation fairness** • \<Benchmark: "Fair" • ≥Benchmark: "Overpriced" |
+| revenue\_per\_employees | Workforce productivity and operational revenue generation per employee. | $\frac{Revenue}{Total\ headcount\ (FTEs)}$ Compare against peer median  | **Human Capital Productivity**  • \<Benchmark: "Overstaffed / Low Productivity" • ≥Benchmark: "High Operational Efficiency" |
+| cash\_to\_assets | Immediate liquidity reserve ratio relative to the total asset base | $\frac{Cash\ &\ cash\ equivalents}{Total\ assets}$ Compare Cash/Assets vs. **Benchmark\_Liquidity** & Check **Runway \< 6 months** | **Liquidity Risk Level**  • Runway \< 6m: "Liquidity Distress / Insolvency Risk" • Runway ≥ 6m: "Safe Operational Runway" |
+| revenue\_to\_account\_receivables | Asset management efficiency and speed of credit collection | $\frac{Revenue}{Account\ Receivables\ }$ Compare with Industry Days Sales Outstanding (DSO)  | **Working Capital Health**  • DSO \> Benchmark: "Working Capital Lock / Cash Trap" • DSO ≤ Benchmark: "Fast Cash Conversion"  |
+| debt\_ratio  | Structural financial leverage and proportion of debt-financed assets | $\frac{Total\ debt}{Total\ assets}$ Compare with Startup Sector Capital Structure | **Leverage Risk **  • \>Benchmark: "Over-leveraged / High Financial Risk" • ≤Benchmark: "Conservative Capital Structure"  |
+
+**MASTER LOOK-UP TABLE FOR BACKEND/JAVASCRIPT**
+
+| Chỉ số (Metric) | F\&B | Pharmacy | (Software/IT) | AI (Artificial Intelligence) | E-commerce |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **Gross Margin** | 60% – 70% | 65% – 80% | 70% – 85% | 50% – 70% | 30% – 50% |
+| **Net Margin** | 5% – 15% | 12% – 22% | 15% – 25% | **\-20% – 15%** | 3% – 10% |
+| **ROA** | 10% – 20% | 8% – 15% | \> 15% *(Asset-light)* | **10% – 20%** | 8% – 15% |
+| **Rev per FTE** | $30k – $50k | $150k – $300k | $100k – $200k | **$250k – $500k+** | $80k – $150k |
+| **DSO** | $\\le$15 – 30 ngày | 60 – 90 ngày *(Kênh bệnh viện/đại lý)* | 30 – 45 ngày | **$\\le$ 0 – 30 ngày** *(B2C/SaaS AI trả trước qua thẻ; B2B 30-45 ngày)* | $\\le$ 7 – 14 ngày *(COD/Ví)* |
+| **Debt Ratio** | 40% – 50% | $20% – 30% | 10% – 20% | 10% – 30% | 30% – 40% |
+| **EPS & P/E Multiple** | P/E: 12x – 18x • EPS dương & ổn định | P/E: 15x – 25x • EPS thấp giai đoạn R\&D | P/E: 20x – 35x • EPS tăng trưởng do scale | P/E: 30x – 60x+ (hoặc P/S 15x–30x) • EPS thường âm giai đoạn đầu • Định giá theo ARR/Compute efficiency | P/E: 15x – 25x • EPS biên mỏng |
+| **Đặc điểm mô hình** | Lợi nhuận phụ thuộc vị trí & quản trị NL. | Chi phí R\&D cao, chu kỳ thu hồi tiền lâu nhưng Gross Margin lớn. | Asset-light, chi phí biến đổi thấp, khả năng mở rộng (Scale) nhanh. | Chi phí vận hành Cloud/GPU/Model Training cực cao; tăng trưởng doanh thu nhanh nhưng Gross Margin chịu áp lực nặng từ chi phí hạ tầng (Inference Cost). | Biên mỏng, phụ thuộc chi phí Marketing (CAC) và kho vận. |
+
