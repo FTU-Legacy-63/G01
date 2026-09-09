@@ -37,13 +37,15 @@
 
 #### **7\. Financial Logic (Logic Tài chính & Thẩm định)**
 
-- Phân tích Chỉ số & Sức khỏe tài chính: Gross Margin, Net Margin, Burn Rate, Cash Flow.  
+- Phân tích Chỉ số & Sức khỏe tài chính: Gross Margin, Net Margin, Burn Rate, ROA, Cash to assets, Debt ratio, EPS, revenue to employees, revenue to account receivables
+- Trong quá trình Due Diligence, nhà đầu tư tìm hiểu và cân nhắc theo thứ tự ưu tiên sau từ trái qua phải:
+**Founder -> Market -> Business Model -> Financial Projection -> Valuation (risk & return)**
 - Ma trận đánh giá 5 tiêu chí (Checklist): Quy mô ngành, Mô hình kinh doanh, Sức khỏe tài chính, Lợi thế cạnh tranh, Năng lực Founder.  
 - Định giá & Phân bổ vốn: Cân đối giữa mức độ rủi ro (Red Flags phát hiện được) và tỷ lệ sinh lời kỳ vọng.
 
 #### **8\. Output (Kết quả đầu ra)**
 
-- **Quyết định đầu tư:** Chấp nhận đầu tư (Invest), Thương lượng (Negotiate), hoặc Từ chối (Reject) cho từng Startup.  
+- **Quyết định đầu tư:** Chấp nhận đầu tư (Invest), hoặc Từ chối (Reject) cho từng Startup.  
 - **Báo cáo kết quả danh mục (Portfolio Results):** Cấu trúc danh mục, Tỷ suất sinh lời tổng thể (ROI).  
 - **Báo cáo chất lượng quyết định (Investment Decision Report):**  
   * *Khả năng nhận diện Rủi ro / Red Flags:* Đánh giá độ nhạy bén qua việc chọn câu hỏi Q\&A và chấm điểm Checklist.  
