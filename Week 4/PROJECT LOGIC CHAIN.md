@@ -45,11 +45,17 @@
 
 #### **8\. Output (Kết quả đầu ra)**
 
-- **Quyết định đầu tư:** Chấp nhận đầu tư (Invest), hoặc Từ chối (Reject) cho từng Startup.  
-- **Báo cáo kết quả danh mục (Portfolio Results):** Cấu trúc danh mục, Tỷ suất sinh lời tổng thể (ROI).  
-- **Báo cáo chất lượng quyết định (Investment Decision Report):**  
-  * *Khả năng nhận diện Rủi ro / Red Flags:* Đánh giá độ nhạy bén qua việc chọn câu hỏi Q\&A và chấm điểm Checklist.  
-  * *Khả năng Phân bổ vốn (Capital Allocation):* Đánh giá quy mô vốn rót có tương thích với mức độ rủi ro của doanh nghiệp.
+- **Quyết định Đầu tư**: Đối với mỗi công ty khởi nghiệp (startup), người chơi chọn Đầu tư hoặc Từ chối. Nếu chọn đầu tư, người chơi sẽ chọn số vốn phân bổ trong khoảng chi tiêu đã được quy định sẵn.
++ Hiệu suất Danh mục Đầu tư: Trò chơi báo cáo kết quả tài chính từ danh mục đầu tư của người chơi, bao gồm:
++ Phần trăm cổ phần nhận được (Equity)
++ Giá trị đầu tư và Tỷ suất sinh lời (ROI) cho từng startup
++ Số tiền mặt còn lại
++ Tổng lợi nhuận của toàn bộ danh mục đầu tư
+
+- **Báo cáo Phản hồi Quyết định**: Báo cáo này phản ánh hành vi đưa ra quyết định của người chơi thay vì đánh giá quyết định đầu tư đó là đúng hay sai. Báo cáo bao gồm:
++ Mức độ Nhất quán giữa Đánh giá và Phân bổ: Độ tương quan/sự phù hợp giữa đánh giá theo bảng kiểm (checklist) cuối cùng và số vốn cam kết đầu tư.
++ Xu hướng Đầu tư: Các mô hình/xu hướng phân bổ vốn lặp đi lặp lại qua từng trường hợp.
++ Phản hồi dựa trên Bằng chứng: Các bằng chứng quan trọng trong từng trường hợp có thể cần xem xét lại dựa trên đánh giá cuối cùng của người chơi.
 
 #### **9\. User Action (Hành động & Bài học của người chơi)**
 
