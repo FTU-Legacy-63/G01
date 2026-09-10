@@ -62,8 +62,7 @@ Evaluation:
   ├── Financial Health  
   │    ├── Revenue  
   │    ├── Growth  
-  │    ├── Margin  
-  │    └── Cash Flow  
+  │    ├── Other indicators related to industry & case stories - Main indicators: ROA, EPS, revenue per FTEs, revenue per AR, cash to assets, gross/ net profit   margin, debt to assets (leverage ratio) 
   ├── Product & Competitive Advantage  
   └── Management / Founder's Experience  
   ↓  
