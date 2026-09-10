@@ -1,3 +1,5 @@
+**ASSUMPTIONS FOR DATA LOGIC**
+
 (1) Return phụ thuộc vào báo cáo tài chính, industry potential và tính cách founder only
 
 (2) Không có vấn đề/rủi ro liên quan đến pháp lý, thuế, và kĩ thuật
