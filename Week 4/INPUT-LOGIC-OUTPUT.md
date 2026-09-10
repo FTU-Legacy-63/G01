@@ -25,4 +25,3 @@
 | **Debt Ratio** | 40% – 50% | 20% – 30% | 10% – 20% | 10% – 30% | 30% – 40% |
 | **EPS & P/E Multiple** | P/E: 12x – 18x<br>• EPS dương & ổn định | P/E: 15x – 25x<br>• EPS thấp giai đoạn R&D | P/E: 20x – 35x<br>• EPS tăng trưởng do scale | P/E: 30x – 60x+ *(hoặc P/S 15x–30x)*<br>• EPS thường âm giai đoạn đầu<br>• Định giá theo ARR / Compute efficiency | P/E: 15x – 25x<br>• EPS biên mỏng |
 | **Đặc điểm mô hình** | Lợi nhuận phụ thuộc vị trí & quản trị NL. | Chi phí R&D cao, chu kỳ thu hồi tiền lâu nhưng Gross Margin lớn. | Asset-light, chi phí biến đổi thấp, khả năng mở rộng (Scale) nhanh. | Chi phí vận hành Cloud/GPU/Model Training cực cao; tăng trưởng doanh thu nhanh nhưng Gross Margin chịu áp lực nặng từ chi phí hạ tầng (Inference Cost). | Biên mỏng, phụ thuộc chi phí Marketing (CAC) và kho vận. |
-|
