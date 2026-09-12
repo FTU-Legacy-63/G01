@@ -20,8 +20,8 @@ START
   ↓  
 Receive Entrepreneur Pitch  
   ├── Product Description   
-  │    ├── Problem  
-  │    └── Solution
+       ├── Problem  
+       └── Solution
 
   ↓  
 Review General Information  
