@@ -1,29 +1,15 @@
-**INPUT DICTIONARY** 
+# INPUT DICTIONARY
 
-| Output Component | Description |
-| ----- | ----- |
-| Khả năng nhận diện rủi ro/ red flags  | Evaluates the player's acumen in identifying core operational risks and financial statement traps (red flags)—such as artificial revenue growth, hidden COGS, negative cash flow, or unsustainable burn rates—through their question selections during the Investigation (Q\&A) phase and their final Checklist evaluation. |
-| Capital allocation  | Đánh giá tư duy quản trị rủi ro và hiệu quả sử dụng nguồn vốn của người chơi, thể hiện qua việc quyết định quy mô vốn rót có phù hợp với mức độ rủi ro đã thẩm định của từng doanh nghiệp hay không |
+**Câu hỏi trung tâm: Sản phẩm cần thông tin gì để hoạt động, thông tin đó đến từ đâu và có đủ khả thi để sử dụng hay không?**
 
-| Input name | Meaning | Type | Unit | Example | Valid range | Source/owner |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Capital Investment | Số lượng vốn người chơi quyết định đầu tư trong 1 vòng | Float | VND | 1,000,000,000 | 0 $\leq $ x $\leq $ %equity \* price per %equity | User Input |
-| Max %equity | Phần trăm equity tối đa mà người chơi được phép mua của 1 công ty | Float | % | 10% | 0 \- 25% |  |
-| Price per %equity | Mệnh giá của 1% vốn của công ty | Float | VND | 1,000,000 | Được quyết định bởi developer |  |
-| %return | Phần trăm gia tăng giá trị vốn của công ty | Float | % | 5% | Range sẽ được quyết định bởi developer dựa vào thống kê real data |  |
-| current\_ratio | Current ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| quick\_ratio | Quick ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| cash\_ratio | Cash ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| debt\_ratio | Debt ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| long-term\_debt\_ratio | Long-term debt ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| debt/equity\_ratio | debt/equity ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| total\_asset\_turnover\_ratio | Total asset turnover ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| fixed\_asset\_turnover\_ratio | Fixed asset turnover ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| average\_collection\_period | Average collection period | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| inventory\_turnover\_ratio | Inventory turnover ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| profit\_margin | Profit margin | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| return\_on\_assets | Return on assets | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| return\_on\_equity | Return on equity | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| pe\_ratio | price/earnings ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-| pb\_ratio | Market-to-book ratio | Float | Ratio | 1.5 | 0 \- 10 | Vnstock library / Financial Statements |
-
+| **Input name**                               | **Meaning**                                                                     | **Type** | **Unit** | **Example**                                                                                               | **Valid range**                                         | **Source/owner**                                                                   |
+| -------------------------------------------- | ------------------------------------------------------------------------------- | -------- | -------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Capital Investment                           | Số lượng vốn người chơi quyết định đầu tư trong 1 vòng                          | Float    | $        | 1,000,000,000                                                                                             | 0 ≤ x ≤ max investable equity × founders/implied valuation | User                                                                               |
+| Checklist options and accuracy               | Hiệu quả người chơi đánh giá công ty được thể hiện qua việc trả lời checklist   | Float    | %        | 20/30 or 67%                                                                                              | 0 ≤ x ≤ 1                                                 | User                                                                               |
+| ROI                                          | Lãi (lỗ) mà người chơi nhận được nếu đầu tư vào một công ty nhất định           | Float    | %        | 0.15                                                                                                      | -1 ≤ x ≤ 1                                                 | Level Designers                                                                    |
+| Entrepreneur Pitch                           | Lời mời đầu tư của người doanh nhân                                             | String   | N/A      | “Our plant-based fish products will be revolutionary in the F&B industry”                                 | N/A                                                     | Level Designers                                                                    |
+| Q&A with Founders                            | Hệ thống dialogue tree thảo luận và đối chất với doanh nhân giúp                | String   | N/A      | Q: “Lợi thế cạnh tranh của sản phẩm bạn?”<br>A: “Công thức được kiểm nghiệm y tế và độc quyền thương mại” | N/A                                                     | Level Designers                                                                    |
+| Market Size (part of Industry Information)   | Quy mô thị trường của lĩnh vực kinh doanh của công ty doanh nhân                | Float    | $        | 10,000,000,000                                                                                            | x > 0                                                   | Level Designers, internet statistics deemed valid                                  |
+| Market Growth (part of Industry Information) | Mức độ tăng trưởng của thị trường nói trên                                     | Number   | %        | 7%                                                                                                        | x > -1                                                  | Level Designers’ assumptions, internet statistics deemed valid                     |
+| Company Overview                             | Sơ bộ về mô hình kinh doanh công ty và hồ sơ lý lịch của founder                | String   | N/A      | “Plantfish, Inc. hoạt động từ 2023, phát triển đồ ăn phân phối cho các nhà hàng ăn chay…”                 | N/A                                                     | Level Designers                                                                    |
+| Financial Statements                         | Các bản báo cáo tài chính tiêu chuẩn nhằm hỗ trợ quá trình ra quyết định đầu tư | Image    | N/A      | Balance sheet: Asset 100, Liability 20, Equity 80                                                         | N/A                                                     | Level Designers, [https://wefunder.com/](https://wefunder.com/), others             |
