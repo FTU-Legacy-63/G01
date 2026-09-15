@@ -28,7 +28,7 @@ Use the information to identify business strengths, weaknesses, and financial re
 
 ## **3\. Initial Capital**
 
-* Each player starts the game with **1,000,000,000 VND**.
+* Each player starts the game with **$10,000,000**.
 * This is the player's total available capital for investment throughout the game.
 * After each round, the system automatically deducts the investment amount committed to the startup case when the player chooses **Invest**.
 * If the player chooses **Reject**, no capital is deducted.
