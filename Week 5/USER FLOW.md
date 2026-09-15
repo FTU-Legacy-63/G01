@@ -22,8 +22,7 @@
 | 2 | Investigation – Đặt câu hỏi | Hiển thị phản hồi từ Founder | Khung hội thoại Q\&A |
 | 3 | Điền Checklist | Lưu trạng thái lựa chọn Yes/No của người chơi | Widget Checklist |
 | 4 | Bấm nút "Reject" | Hiện cảnh báo xác nhận bỏ qua deal | Màn hình xác nhận |
-| 5 | Bấm "Yes" để xác nhận | Ghi nhận vốn \= 0, chuyển thẳng tới màn hình Report | Lưu trạng thái số vốn |
-| 6 | Đọc báo cáo và bấm "Next Startup" | Chỉ hiển thị điểm Checklist (không có ROI), tải vòng chơi mới | Màn hình đầu ra |
+| 5 | Bấm "Yes" để xác nhận | Ghi nhận vốn = 0, chuyển thẳng tới round tiếp theo hoặc màn hình Report (nếu là round cuối) | Lưu trạng thái số vốn |
 
 ### 
 
