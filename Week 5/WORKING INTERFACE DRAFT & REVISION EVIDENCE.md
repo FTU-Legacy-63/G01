@@ -12,5 +12,5 @@ Bản nháp giao diện đã được triển khai thành Interactive Prototype 
 | Owner | Integration  |
 | ----- | ----- |
 | Minh Trang | Thiết kế flow, xác định main features, supporting features, core features Thiết kế Interactive Prototype trên Figma sơ bộ & tích hợp các features, kiểm tra error path  |
-| Kiều Anh | Thiết kế input, output đáp ứng user goals, đồng nhất user goals, viết explanation cho input-output  |
+| Kiều Anh | Thiết kế input, output đáp ứng user goals, đồng nhất user goals với rulebook với game mechanisms, viết explanation cho inputs-outputs  |
 
