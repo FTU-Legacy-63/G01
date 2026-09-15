@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pitch &amp; Ledger — Plantfish</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="game-shell">
+    <aside class="sidebar" aria-label="Game navigation">
+      <h1 id="game-title">Pitch &amp; Ledger</h1>
+      <div class="case-meta">
+        <p id="company-name">Plantfish</p>
+        <p id="founder-name">Founder</p>
+        <p>Round 1 · Case study</p>
+      </div>
+      <p class="fund-label">Fund capital: <strong id="fund-capital">—</strong></p>
+      <nav id="navigation" aria-label="Main screens">
+        <button type="button" data-screen="home" aria-current="page">Home</button>
+        <button type="button" data-screen="pitch">Pitch Deck</button>
+        <button type="button" data-screen="documents">Documents</button>
+        <button type="button" data-screen="dialogue">Founder Q&amp;A</button>
+        <button type="button" data-screen="decision">Checklist &amp; Decision</button>
+        <button type="button" data-screen="report" hidden>Investment Report</button>
+      </nav>
+      <p id="save-notice" class="preview-note" role="status"></p>
+      <button type="button" id="reset-game">Start a new game</button>
+    </aside>
+    <main id="content" tabindex="-1" aria-label="Case content">
+      <p>Loading the case… Keep all extracted folders beside index.html and enable JavaScript.</p>
+    </main>
+  </div>
+  <noscript>This game requires JavaScript.</noscript>
+  <script defer src="./data/config.js"></script>
+<script defer src="./data/plantfish.js"></script>
+<script defer src="./js/engine.js"></script>
+<script defer src="./js/state.js"></script>
+<script defer src="./js/ui.js"></script>
+<script defer src="./js/app.js"></script>
+</body>
+</html>
