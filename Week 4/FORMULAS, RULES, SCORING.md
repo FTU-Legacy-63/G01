@@ -16,7 +16,7 @@
 
 **Formula**
 
-**$Final Capital = Initial Capital +  Sum (Investment_t x Return_i)$**
+**$Final Capital = Initial Capital +  Sum  (Investment_t  x  Return_i)$**
 
 **$Portfolio\ Return\ =\ \frac{Final\ Capital\ -\ Initial\ Capital}{Initial\ Capital}\ \times \ 100$**
 
@@ -37,7 +37,7 @@
 
 ### **C. Overall Performance**
 
-**$Overall = 50% x Accuracy + 50% x ReturnScore$**
+**Overall = 50% x Accuracy + 50% x ReturnScore**
 
 * **Indicator:** Measures both the player’s analytical ability through Checklist Accuracy and the effectiveness of translating that analysis into investment decisions and capital allocation.   
 * **Scale:** 0-100  
