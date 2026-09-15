@@ -26,7 +26,16 @@ Review:
 
 Use the information to identify business strengths, weaknesses, and financial red flags.
 
-## **3\. Checklist**
+## **3\. Initial Capital**
+
+* Each player starts the game with **1,000,000,000 VND**.
+* This is the player's total available capital for investment throughout the game.
+* After each round, the system automatically deducts the investment amount committed to the startup case when the player chooses **Invest**.
+* If the player chooses **Reject**, no capital is deducted.
+* The remaining capital is carried forward to the next round.
+* The player cannot invest more than the **available capital**.
+
+## **4\. Checklist**
 
 * All checklist questions must be answered.  
 * Each question accepts **Yes / No** only.  
@@ -41,7 +50,7 @@ Use the information to identify business strengths, weaknesses, and financial re
 | 50–69 | Moderate |
 | \<50 | Weak |
 
-## **4\. Investment Decision**
+## **5\. Investment Decision**
 
 After completing the checklist, choose:
 
@@ -58,11 +67,10 @@ After completing the checklist, choose:
 * Each investment amount has a **predefined corresponding equity percentage**.  
 * Equity terms **cannot be negotiated or changed**.
 
-## **5\. Investment Return**
+## **6\. Investment Return & Return Score**
 
 Each startup has a **fixed simulated ROI**. Uninvested capital earns **0% return**.
 
-## **6\. Return Score**
 
 | Portfolio Return | Return Score |
 | :---: | :---: |
@@ -82,8 +90,6 @@ Each startup has a **fixed simulated ROI**. Uninvested capital earns **0% return
 | 50–69 | 🐠 Clownfish — Average |
 | 30–49 | 🐡 Pufferfish — Weak |
 | 0–29 | 🐟 Minnow — Poor |
-
----
 
 ## **8\. Final Report**
 
