@@ -1,5 +1,5 @@
-1. **GROUP VERIFICATION**   
-- **BIGGEST ISSUES STILL HAVE TO RESOLVE BEFORE WEEK 6 \- CHOOSE 1 ONLY (ISSUES NẰM TRONG SCOPE TỪ 1 \- 5\)**  
+I. **GROUP VERIFICATION**  
+1. **BIGGEST ISSUES STILL HAVE TO RESOLVE BEFORE WEEK 6 \- CHOOSE 1 ONLY (ISSUES NẰM TRONG SCOPE TỪ 1 \- 5\)**  
   The biggest issue our team still needs to solve is finalizing and validating the logic of the Final Investment Report. The report needs to transform the player’s checklist answers, Invest/Reject decision, and capital allocation into feedback that is clear, consistent, and meaningful. At the moment, the group already has the main scoring components, but we still need to ensure that different combinations of player choices produce appropriate and understandable feedback.  
     
 2. **WHY IS THIS ISSUE? WHY BIGGEST ISSUE?**   
@@ -24,7 +24,7 @@
     
   This also matches the current Week 6 direction of connecting the core flow, testing, and fixing issues before further expansion.
 
-5. **MEMBER CONTRIBUTION VERIFICATION** 
+II. **MEMBER CONTRIBUTION VERIFICATION** 
 
 # Team Member Contributions
 
