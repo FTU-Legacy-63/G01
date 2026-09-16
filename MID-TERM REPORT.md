@@ -26,7 +26,6 @@ I. **GROUP VERIFICATION**
 
 II. **MEMBER CONTRIBUTION VERIFICATION** 
 
-# Team Member Contributions
 
 | **Member** | **What did this member actually produce?** | **How is it used in this project?** | **What can this member personally explain, calculate, demonstrate and reproduce?** |
 |---|---|---|---|
