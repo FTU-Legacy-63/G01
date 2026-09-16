@@ -2,10 +2,10 @@
 - **BIGGEST ISSUES STILL HAVE TO RESOLVE BEFORE WEEK 6 \- CHOOSE 1 ONLY (ISSUES NẰM TRONG SCOPE TỪ 1 \- 5\)**  
   The biggest issue our team still needs to solve is finalizing and validating the logic of the Final Investment Report. The report needs to transform the player’s checklist answers, Invest/Reject decision, and capital allocation into feedback that is clear, consistent, and meaningful. At the moment, the group already has the main scoring components, but we still need to ensure that different combinations of player choices produce appropriate and understandable feedback.  
     
-- **WHY IS THIS ISSUE? WHY BIGGEST ISSUE?**   
+2. **WHY IS THIS ISSUE? WHY BIGGEST ISSUE?**   
   Although the game already has several performance indicators, the current feedback logic does not yet clearly show how the player’s checklist assessment, investment decision, and capital allocation lead to the final result. This is the biggest issue because the Final Investment Report is the point where the player’s actions are translated into a learning outcome. If the feedback does not clearly connect decisions with results, players may not understand why they received that outcome or how to improve their due-diligence and investment evaluation skills. 
 
-- **SOLUTION?**    
+3. **WHAT HAS YOUR TEAM DONE ABOUT THIS ISSUE SO FAR?**    
   So far, the team has built the main elements needed for the report. For the first startup case, we have:  
 + Finalized seven case-specific checklist questions and benchmark answers;  
   developed feedback rules for correct and incorrect assessments;  
@@ -14,7 +14,7 @@
     
   This means the main evaluation logic already exists, but it still needs to be organized into one complete and reliable report-generation structure.   
     
-- **AFTER WEEK 5, WHAT WILL WE DO TO SOLVE THIS ISSUE?**   
+4. **AFTER WEEK 5, WHAT WILL WE DO TO SOLVE THIS ISSUE?**   
   The next step is to convert the current scoring and feedback rules into a consistent Final Investment Report structure. We plan to:  
     
 + Separate portfolio-level results from case-by-case feedback;  
@@ -24,7 +24,7 @@
     
   This also matches the current Week 6 direction of connecting the core flow, testing, and fixing issues before further expansion.
 
-2. **MEMBER CONTRIBUTION VERIFICATION** 
+5. **MEMBER CONTRIBUTION VERIFICATION** 
 
 | Member | What did this member actually produce? | How is it used in this project? | What can this member personally explain, calculate, demonstrate and reproduce? |
 | ----- | ----- | ----- | ----- |
