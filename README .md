@@ -1,5 +1,6 @@
-**TÊN SẢN PHẨM: PITCH & LEDGER**   
-**MÃ NHÓM: G01**  
+### **GROUP FOOTPRINT**
+**PRODUCT NAME: PITCH & LEDGER**   
+**GROUP: G01**  
 **LINK REPO: [https\://github.com/FTU-Legacy-63/G01](https://github.com/FTU-Legacy-63/G01)**  
 **LINK DEMO: [pitch-and-ledger.netlify.app](http://pitch-and-ledger.netlify.app)**
 
