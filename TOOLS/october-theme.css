@@ -1,0 +1,241 @@
+/* 2026-10-01 reference: 1920 × 1080. Presentation overrides only.
+   Content grows/scrolls on shorter screens; no clipped questions or tables. */
+:root {
+  --bg:#101f26; --panel:#203f4d; --paper:#fffbf9; --ink:#101f26;
+  --gold:#ffb916; --green:#f5b431; --red:#bec9ce;
+}
+body {background:linear-gradient(180deg,#101f26 0%,#2a596f 100%) fixed;min-height:100vh}
+.game-shell {max-width:1920px;padding:24px 48px 20px}
+.topbar {min-height:48px;background:none;border-radius:0;padding:0;gap:24px}
+.brand {font-size:32px;letter-spacing:0}
+.brand img {width:48px;height:48px}
+#navigation {gap:20px;justify-content:center;flex:1;margin:0}
+#navigation button {font:16px var(--mono);min-width:130px;padding:10px 9px;color:#fffbf9}
+.fund,body[data-screen=documents] .fund,body[data-screen=decision] .fund,body[data-screen=dialogue] .fund {display:block;font:20px var(--mono)}
+.fund span {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.fund strong {display:flex;align-items:center;gap:12px}
+.fund strong:after {content:'$';display:inline-grid;place-items:center;width:28px;height:28px;border:1px solid var(--cyan);border-radius:50%;color:var(--cyan)}
+.statusbar {height:24px;min-height:24px}
+#reset-game {font-size:10px}
+#content {padding:0}
+.case-layout,.scene-layout,body[data-screen=documents] .workspace {grid-template-columns:minmax(260px,438px) minmax(0,1fr);gap:46px;margin-right:0}
+.case-sidebar {display:flex;flex-direction:column;min-height:924px}
+.identity-card {min-height:153px;display:flex;align-items:center;gap:40px;padding:14px 24px;border:1px solid #44636b;border-radius:20px;background:#203f4d}
+.founder-portrait {display:block;background-repeat:no-repeat;flex:none}
+.identity-card .founder-portrait {width:90px;align-self:flex-end}
+.identity-label {min-width:0}
+.identity-card h1 {font:700 30px/1.2 var(--reading);letter-spacing:-.6px;margin:40px 0 12px;overflow-wrap:anywhere}
+.case-number {font:18px var(--mono);margin:0;color:#c3d7d6}
+.fund-facts,body[data-screen=home] .fund-facts,body[data-screen=pitch] .fund-facts {width:100%;max-width:none;background:none;margin:48px 0 0;padding:0;display:block}
+.fund-facts:after {display:none}
+.fact,body[data-screen=home] .fact,body[data-screen=pitch] .fact {padding:16px 24px 0;border-top:2px solid #c3d7d644;border-radius:0;background:none;margin:0 8px 40px 0}
+.fact:last-child {margin-bottom:24px}
+.fact dt,body[data-screen=home] .fact dt,body[data-screen=pitch] .fact dt {font:20px var(--mono);margin-bottom:14px}
+.fact dd {font:26px var(--mono);color:var(--cyan)}
+.notes-panel {width:100%;max-width:none;margin-top:auto;font:20px var(--mono);padding-top:40px}
+.notes-panel summary {color:#fffbf9;cursor:pointer;margin-bottom:14px}
+.notes-panel textarea {display:block;min-height:328px;background:#e3e7e8b3;border:0;border-radius:20px;padding:32px;color:#171b1f;font:18px/1.5 var(--reading);resize:vertical}
+.notes-panel textarea::placeholder {color:#17222b;opacity:1}
+.meeting {gap:20px}
+.stage {aspect-ratio:1340/563;border-radius:20px;isolation:isolate}
+.room-background {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+.stage-founder {position:absolute;right:10.8%;bottom:0;height:77%;width:auto}
+.qna-stage {aspect-ratio:1340/440}
+.qna-stage .stage-founder {height:75%}
+.dialogue-box {background:#fffbf9;min-height:340px;padding:70px 68px 12px;border-radius:20px;gap:20px}
+.dialogue-text {font:18px/1.6 var(--reading)}
+.dialogue-next {font-size:18px;min-height:48px}
+.dialogue-controls {gap:16px}
+body[data-screen=dialogue] .dialogue-box {min-height:180px;padding:24px 32px}
+body[data-screen=dialogue] .dialogue-text {font-size:18px;line-height:1.65}
+.conversation-options {padding:0;background:transparent;border-radius:0;color:#101f26}
+.choice-list {gap:10px}
+.choice-list button {background:#fffbf9cc;border-radius:10px;padding:13px 26px;font:italic 18px/1.5 var(--reading);min-height:52px}
+.choice-list button:hover {background:#fffbf9}
+.conversation-end {margin-top:28px;justify-content:flex-end}
+.conversation-end [data-action=finish-qna] {order:2;background:#ffb916;border-radius:10px;min-height:48px;padding:10px 22px;font:700 18px var(--reading);text-decoration:none}
+.conversation-end [data-action=history] {margin-right:auto;color:#fffbf9}
+.documents {min-height:924px;background:#fffbf9;padding:36px 48px}
+.document-tabs {margin-bottom:30px}
+.document-tabs button {padding:8px 16px;min-width:170px}
+.paper h2 {font:700 40px/1.25 var(--reading);margin-bottom:26px}
+.reference-scale h4 {margin:24px 0 16px;font-size:18px}
+.reference-track {height:10px;position:relative;border-radius:6px;background:linear-gradient(90deg,#a6c8d8,#52a49c,#145b78);margin:16px 8px}
+.reference-mark {position:absolute;top:-4px;width:3px;height:18px;background:#101f26;transform:translateX(-50%)}
+.reference-scale .table-scroll {margin:16px 0}
+.reference-scale table {max-width:650px}
+.checklist-panel,.decision-panel {background:#fffbf9;padding:36px 50px;color:#101f26}
+.checklist-panel {height:509px}
+.checklist-panel h2,.decision-panel h2 {font:700 28px/1.3 var(--reading);margin-bottom:18px}
+.checklist-instruction {font:italic 16px/1.4 var(--reading)}
+.checklist-head,.checklist-row {grid-template-columns:minmax(0,1fr) 110px 110px;gap:24px;padding-right:100px}
+.checklist-head {min-height:58px;margin-top:12px}
+.checklist-row {font-size:18px;min-height:50px;padding-block:9px}
+.checklist-row input {width:32px;height:32px;border-width:1px;border-radius:6px}
+.decision-panel {min-height:399px;margin-top:16px;padding-bottom:22px}
+.decision-panel h2 {margin-bottom:36px}
+.allocation-grid {grid-template-columns:139px minmax(0,1fr);gap:100px;padding:0 35px}
+.decision-controls {gap:45px}
+.decision-controls button {background:#f5b431;border-radius:10px;font:700 18px var(--reading);min-height:46px}
+.decision-controls button[data-value=reject] {background:#bec9ce}
+.allocation-slider {max-width:800px}
+#investment-slider {margin:30px 0 22px}
+#investment-slider::-webkit-slider-thumb {background:#005f85;width:44px;height:44px;margin-top:-17px}
+#investment-slider::-moz-range-thumb {background:#005f85;width:44px;height:44px}
+#allocation-summary {font-size:16px}
+.confirmation-row {margin-top:25px}
+[data-action=confirm] {background:#ffb916;min-width:235px;min-height:46px;font:700 18px var(--reading)}
+.report-paper {background:#fffbf9}
+body[data-screen=report] {background:#101f26 url('../assets/bg/Bg-evening.png') center/cover fixed no-repeat}
+body[data-screen=report] .game-shell {padding-top:20px}
+.start-splash #start-game {min-height:44px}
+@media(min-width:1400px) and (max-width:1800px) {
+ .case-layout,.scene-layout,body[data-screen=documents] .workspace {grid-template-columns:320px minmax(0,1fr);gap:32px}
+ .identity-card {gap:18px;padding-inline:18px}
+ .identity-card h1 {font-size:27px}
+ .case-sidebar {min-height:820px}
+ .notes-panel textarea {min-height:260px}
+ .dialogue-box {padding:38px;min-height:300px}
+ .checklist-head,.checklist-row {padding-right:20px;grid-template-columns:minmax(0,1fr) 65px 65px}
+}
+@media(max-width:1399px) {
+ .game-shell {padding:18px 24px}
+ .topbar {gap:15px;flex-wrap:wrap}
+ .brand {font-size:28px}
+ #navigation {gap:8px}
+ #navigation button {font-size:14px;min-width:100px}
+ .fund {font-size:16px}
+ .case-layout,.scene-layout,body[data-screen=documents] .workspace {grid-template-columns:250px minmax(0,1fr);gap:24px}
+ .case-sidebar {min-height:750px}
+ .identity-card {gap:16px;padding:16px;min-height:133px}
+ .identity-card .founder-portrait {width:65px}
+ .identity-card h1 {font-size:23px;margin:20px 0 8px}
+ .case-number {font-size:14px}
+ .fact,body[data-screen=home] .fact,body[data-screen=pitch] .fact {padding:16px 8px 0}
+ .fact dt {font-size:17px}.fact dd {font-size:22px}
+ .notes-panel {font-size:17px}.notes-panel textarea {padding:20px;min-height:250px;font-size:16px}
+ .dialogue-box {padding:28px;min-height:250px}
+ .dialogue-text,body[data-screen=dialogue] .dialogue-text {font-size:16px}
+ .choice-list button {font-size:16px}
+ .checklist-panel,.decision-panel {padding:28px}
+ .checklist-head,.checklist-row {grid-template-columns:minmax(0,1fr) 45px 45px;gap:10px;padding-right:8px}
+ .checklist-row {font-size:16px}
+ .allocation-grid {gap:30px;padding:0;grid-template-columns:110px minmax(0,1fr)}
+ .documents {padding:30px;min-height:750px}
+ .document-tabs button {min-width:0}
+}
+@media(max-width:1000px) {
+ #navigation {order:3;flex-basis:100%;justify-content:space-between}
+ .fund {margin-left:auto}
+ .case-layout,.scene-layout,body[data-screen=documents] .workspace {grid-template-columns:1fr}
+ .case-sidebar {min-height:0;display:grid;grid-template-columns:1fr 1.3fr;gap:16px}
+ .identity-card {min-height:130px}
+ .fund-facts,body[data-screen=home] .fund-facts,body[data-screen=pitch] .fund-facts {margin:0;display:flex;gap:16px;align-items:center}
+ .fact,body[data-screen=home] .fact,body[data-screen=pitch] .fact {margin:0;padding:12px 0;flex:1;min-width:0}
+ .fact dd {font-size:22px}
+ .notes-panel {grid-column:1/-1;padding:0;margin:0}
+ .notes-panel textarea {min-height:120px;max-height:260px}
+ .notes-panel summary {margin-bottom:8px}
+ .checklist-panel {height:auto;min-height:509px}
+ .checklist {max-height:none;overflow:visible}
+ .documents {min-height:600px}
+}
+@media(max-width:560px) {
+ .game-shell {padding:14px 12px}
+ .topbar {padding:0;gap:8px}
+ .brand {font-size:24px}.brand img {width:34px;height:36px}
+ .fund,body[data-screen=documents] .fund,body[data-screen=decision] .fund,body[data-screen=dialogue] .fund {font-size:13px}
+ .fund strong:after {width:21px;height:21px}
+ #navigation {gap:0;flex-wrap:wrap}
+ #navigation button {min-width:0;padding:10px 6px;font-size:11px}
+ .case-sidebar {grid-template-columns:1fr}
+ .identity-card {justify-content:flex-start;min-height:100px}
+ .identity-card .founder-portrait {width:58px}
+ .identity-card h1 {margin:10px 0 0;font-size:26px}
+ .fund-facts {gap:24px!important}
+ .fact dt,body[data-screen=home] .fact dt,body[data-screen=pitch] .fact dt {font-size:15px;margin-bottom:10px}
+ .notes-panel textarea {min-height:100px;padding:16px}
+ .dialogue-box,body[data-screen=dialogue] .dialogue-box {padding:20px;min-height:0}
+ .dialogue-next {font-size:15px}
+ .conversation-end {gap:14px;flex-wrap:wrap}
+ .conversation-end [data-action=finish-qna] {font-size:15px;padding:10px 16px}
+ .choice-list button {font-size:15px;padding:12px 16px}
+ .documents,.checklist-panel,.decision-panel {padding:22px 16px}
+ .paper h2 {font-size:30px}
+ .document-tabs button {font-size:12px;padding:8px 4px}
+ .checklist-head,.checklist-row {grid-template-columns:minmax(0,1fr) 34px 34px;gap:8px;padding-right:0}
+ .checklist-row {font-size:15px}
+ .checklist-panel h2,.decision-panel h2 {font-size:27px}
+ .allocation-grid {grid-template-columns:1fr;gap:25px}
+ .decision-controls {flex-direction:row;gap:20px}
+ .decision-controls button {min-width:105px}
+ .confirmation-row {align-items:stretch}
+ .report-shell {margin-top:0}
+ .reference-scale table {min-width:0}
+}
+
+/* Documents: the viewport owns the frame; only document body scrolls.
+   Tabs and the next-step action remain accessible outside the scroll area. */
+body[data-screen=documents] {height:100vh;height:100dvh;overflow:hidden}
+body[data-screen=documents] .game-shell {
+  height:100vh;height:100dvh;min-height:0;
+  display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;
+}
+body[data-screen=documents] #content {min-height:0;overflow:hidden}
+body[data-screen=documents] .workspace {height:100%;min-height:0;align-items:stretch}
+body[data-screen=documents] .documents {
+  height:100%;min-height:0;min-width:0;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+body[data-screen=documents] .document-tabs {flex-shrink:0;margin-bottom:20px}
+body[data-screen=documents] .paper {
+  flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;
+  scrollbar-gutter:stable;padding-right:12px;
+}
+body[data-screen=documents] .document-next {flex-shrink:0;margin-top:12px;padding-top:12px;gap:8px}
+body[data-screen=documents] .case-sidebar {min-height:0;height:100%}
+body[data-screen=documents] .identity-card {min-height:100px;flex-shrink:0}
+body[data-screen=documents] .fund-facts {margin-top:clamp(12px,3vh,48px);flex-shrink:0}
+body[data-screen=documents] .fact {margin-bottom:clamp(12px,2vh,32px);padding-top:12px}
+body[data-screen=documents] .notes-panel {padding-top:12px;min-height:0}
+body[data-screen=documents] .notes-panel[open] {flex:1;display:flex;flex-direction:column}
+body[data-screen=documents] .notes-panel textarea {min-height:60px;height:clamp(60px,20vh,328px);flex:1;resize:none}
+body[data-screen=documents] .app-footer {margin-top:10px}
+/* The opening focus must not draw a rectangular border around the artwork. */
+.start-splash #start-game,
+.start-splash #start-game:hover,
+.start-splash #start-game:focus,
+.start-splash #start-game:focus-visible {
+  border:0;outline:0;box-shadow:none;background:transparent;
+}
+.start-splash:has(#start-game:focus-visible)>img {filter:brightness(1.1)}
+@media(max-width:1000px) {
+  body[data-screen=documents] .workspace {grid-template-rows:auto minmax(0,1fr);gap:12px}
+  body[data-screen=documents] .case-sidebar {height:auto;gap:8px}
+  body[data-screen=documents] .identity-card {min-height:80px;padding:10px 14px}
+  body[data-screen=documents] .identity-card .founder-portrait {width:44px}
+  body[data-screen=documents] .identity-card h1 {font-size:22px;margin-top:8px}
+  body[data-screen=documents] .fund-facts {margin:0}
+  body[data-screen=documents] .fact {margin:0;padding:8px 0}
+  body[data-screen=documents] .notes-panel {padding:0}
+  body[data-screen=documents] .notes-panel textarea {height:70px;min-height:70px;max-height:70px;padding:10px 14px;flex:none}
+  body[data-screen=documents] .document-tabs {margin-bottom:12px}
+  body[data-screen=documents] .documents {padding:18px}
+}
+@media(max-width:560px) {
+  body[data-screen=documents] .case-sidebar {grid-template-columns:1fr 1fr;align-items:center}
+  body[data-screen=documents] .identity-card {min-height:70px;padding:10px;gap:8px}
+  body[data-screen=documents] .identity-card .founder-portrait {display:none}
+  body[data-screen=documents] .identity-card h1 {font-size:18px}
+  body[data-screen=documents] .case-number {font-size:11px}
+  body[data-screen=documents] .fund-facts {gap:8px!important;flex-direction:column;align-items:stretch}
+  body[data-screen=documents] .fact {padding:3px 0}
+  body[data-screen=documents] .fact dt {font-size:10px;margin-bottom:3px}
+  body[data-screen=documents] .fact dd {font-size:14px}
+  body[data-screen=documents] .notes-panel {font-size:14px}
+  body[data-screen=documents] .notes-panel summary {margin-bottom:4px}
+  body[data-screen=documents] .documents {padding:12px}
+  body[data-screen=documents] .document-next .note {display:none}
+  body[data-screen=documents] .document-next .primary {min-height:36px;font-size:14px;padding:6px 14px}
+  body[data-screen=documents] .app-footer>span:nth-child(2) {display:none}
+}

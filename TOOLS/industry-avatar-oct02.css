@@ -1,0 +1,58 @@
+/* October 2 correction: chart geometry from the supplied HTML/PNG;
+   identity card from new avatar arrangement.txt. Latest styles win. */
+body .identity-card,body[data-screen=documents] .identity-card{
+ display:flex;align-items:center;gap:30px;padding:18px 24px;min-height:153px;
+ background:rgba(42,88,109,.42);border:1px solid #54717d;border-radius:20px;
+}
+.founder-avatar{width:115px;height:115px;border-radius:50%;background:#d9d9d9;overflow:hidden;position:relative;flex:none;display:block}
+body .identity-card .founder-avatar .founder-portrait{display:block;position:absolute;width:85px;left:15px;top:7px;align-self:auto}
+body .identity-label{flex:1;min-width:0;align-self:flex-start;padding-top:6px}
+body .identity-card .case-number{font:400 18px/25px var(--mono);margin:0}
+body .identity-card h1,body[data-screen=documents] .identity-card h1{font:700 30px/1.4 var(--reading);margin:25px 0 0;letter-spacing:-.6px}
+.industry-briefing{container-type:inline-size}
+.industry-chart-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px 56px}
+.industry-chart{margin:12px 0;padding:16px 0;min-width:0;max-width:100%}
+.industry-chart figcaption{text-align:center;margin:0 0 16px;font:700 18px/1.5 var(--reading)}
+.industry-scale-scroll{overflow-x:auto;padding:0 0 8px;max-width:100%}
+.industry-scale-plot{min-width:540px;padding:0 10px}
+.industry-end-labels{display:flex;justify-content:space-between;gap:24px;font:400 18px/1.4 var(--reading);margin-bottom:8px}
+.industry-end-labels span:last-child{text-align:right}
+.industry-gradient{height:16px;margin:0;border-radius:10px;position:relative}
+.industry-tick{position:absolute;top:0;height:16px;width:1px;background:#101f2666}
+.industry-marker{width:14px;height:14px;top:1px;position:absolute;border-radius:50%;transform:translateX(-50%);box-shadow:0 3px 4px #0004}
+.industry-point-labels{position:relative;height:110px;margin-top:12px}
+.industry-point-label{position:absolute;top:0;width:160px;transform:translateX(-50%);text-align:center;font:400 18px/1.45 var(--mono)}
+.industry-point-label.first{transform:none;text-align:left;width:90px}
+.industry-point-label.last{transform:translateX(-100%);text-align:right;width:90px}
+.industry-point-label strong{font-weight:400}
+.industry-point-label span{display:block;font:400 18px/1.4 var(--reading);margin-top:8px}
+.market-chart{margin:28px auto 36px;max-width:660px}
+.market-chart figcaption{text-align:center;font:700 18px var(--reading);margin-bottom:28px}
+.market-bars{position:relative;display:flex;align-items:end;justify-content:space-between;gap:120px;max-width:none;padding:30px 16px 12px;border-bottom:1px solid #005b87}
+.market-column{flex:1;min-width:0;display:flex;align-items:center;flex-direction:column;gap:10px;font:400 18px/1.45 var(--mono)}
+.market-column strong{font-weight:400;white-space:nowrap}
+.market-column>span{min-height:54px}
+.market-bar{width:36px;background:#a9d7f0}.market-column:last-child .market-bar{background:#13603d}
+.market-growth-arrow{position:absolute;width:45%;left:27%;top:25%;border-top:2px solid #278569;transform:rotate(-15deg);padding-top:10px;font:400 18px/1.4 var(--reading);text-align:center;max-width:250px}
+.market-growth-arrow:after{content:'';position:absolute;right:0;top:-7px;width:10px;height:10px;border-right:2px solid #13603d;border-top:2px solid #13603d;transform:rotate(45deg)}
+body .market-calculation{font:400 18px/1.5 var(--reading);margin-top:16px}
+.creator-growth-chart{margin:26px 0}.creator-growth-chart h4{font-size:18px}
+@container(min-width:1150px){.industry-chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1800px){body .identity-card,body[data-screen=documents] .identity-card{gap:18px;padding:16px}.founder-avatar{width:85px;height:85px}body .identity-card .founder-avatar .founder-portrait{width:66px;left:9.5px;top:5px}body .identity-card h1,body[data-screen=documents] .identity-card h1{margin-top:18px}}
+@media(max-width:1399px){body .identity-card,body[data-screen=documents] .identity-card{gap:12px;padding:14px}.founder-avatar{width:65px;height:65px}body .identity-card .founder-avatar .founder-portrait{width:50px;left:7.5px;top:4px}}
+@media(max-width:1000px){body .identity-card,body[data-screen=documents] .identity-card{min-height:110px}body .identity-card h1,body[data-screen=documents] .identity-card h1{margin-top:10px}}
+@media(max-width:560px){body[data-screen=documents] .identity-card{gap:8px;padding:8px}.founder-avatar{width:64px;height:64px}body[data-screen=documents] .founder-avatar{width:40px;height:40px}body[data-screen=documents] .identity-card .founder-avatar .founder-portrait{width:31px;left:4.5px;top:3px}.market-bars{gap:22px;padding-inline:0}.market-column strong{white-space:normal}.market-growth-arrow{position:relative;left:auto;top:auto;transform:none;width:100%;max-width:none;order:-1;margin-bottom:26px}.market-bars{flex-wrap:wrap}.market-column{flex-basis:40%}}
+.market-bars>.market-column .market-bar{background:#a9d7f0}
+.market-bars>.market-column:last-child .market-bar{background:#13603d}
+
+/* Plantfish text collision fix. Keep numeric marker positions; stagger only
+   the nearby -8% / 0% labels on the net-margin scale. */
+.industry-chart[data-label-layout="staggered"] .industry-point-labels{height:210px}
+.industry-chart[data-label-layout="staggered"] .industry-point-label:nth-child(3){top:104px}
+.industry-chart[data-label-layout="staggered"] .industry-point-label:nth-child(3):before{content:'';position:absolute;width:1px;height:98px;background:#101f2655;left:50%;bottom:calc(100% + 6px)}
+
+/* Current Ratio: nearest interior centres are 25% of the track apart.
+   At the 520px minimum track width this is 130px; 120px label boxes
+   leave 10px clear space and wrap the category names onto two lines. */
+.industry-chart[data-label-layout="compact"] .industry-point-label:not(.first):not(.last){width:120px}
+.industry-chart[data-label-layout="compact"] .industry-point-label span{width:120px;max-width:100%;white-space:normal;overflow-wrap:anywhere;line-height:1.4}

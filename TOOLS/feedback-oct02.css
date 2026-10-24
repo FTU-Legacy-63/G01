@@ -1,0 +1,42 @@
+/* Requested typography + anchored utilities. Load after earlier themes. */
+:root{--serif:'Merriweather',serif;--reading:'Merriweather',serif;--brand:'Merriweather',serif;--mono:'Intel One Mono',monospace;font-size:18px}
+/* Local font lookup; supplied font binaries are still required for portable offline fidelity. */
+@font-face{font-family:Merriweather;src:local('Merriweather');font-weight:400}
+@font-face{font-family:Merriweather;src:local('Merriweather Bold');font-weight:700}
+@font-face{font-family:'Intel One Mono';src:local('Intel One Mono');font-weight:400}
+body p,body button,body textarea,body table,body caption,body summary,body .note,body .prose p,body .history-turn,body .choice-list button,body .dialogue-text,body[data-screen=dialogue] .dialogue-text,body .notes-panel textarea,body .document-tabs button,body .checklist-row,body .checklist-instruction,body .slider-limits,body #allocation-summary,body .confirmation-row .note{font-size:18px}
+#navigation button,.fact dt,body[data-screen=home] .fact dt,body[data-screen=pitch] .fact dt{font:400 18px/1.4 var(--mono)}
+body .identity-card h1,body[data-screen=documents] .identity-card h1{font:700 32px/1.2 var(--reading)}
+body .paper h2,body .checklist-panel h2,body .decision-panel h2{font:700 28px/1.3 var(--reading)}
+body .fund,body[data-screen] .fund{font:400 20px var(--mono)}
+body .fact dd,body[data-screen=documents] .fact dd{font:400 26px/1.3 var(--mono)}
+body .primary,body .decision-controls button,body [data-action=confirm],body .conversation-end [data-action=finish-qna],body .opening-letter__footer button{font-weight:400}
+/* Reserve utility space regardless of disclosure state; no margin:auto reflow. */
+body .notes-panel,body[data-screen=documents] .notes-panel{margin-top:24px;padding-top:0;flex:none;min-height:240px;height:240px;overflow-anchor:none}
+body .notes-panel[open],body[data-screen=documents] .notes-panel[open]{display:block;flex:none}
+body .notes-panel textarea,body[data-screen=documents] .notes-panel textarea{height:190px;min-height:0;max-height:190px;resize:none;padding:16px}
+body .case-sidebar{min-height:0}
+body .scene-history{margin-right:auto;flex-shrink:0;position:static;font:400 18px var(--reading)}
+body .dialogue-controls{min-height:48px;align-items:center}
+body .dialogue-box{overflow-anchor:none}
+.stage-founder{filter:drop-shadow(8px 8px 7px #0009)}
+.industry-briefing h3{font:700 22px/1.4 var(--reading);margin-top:32px}
+.briefing-title{font-weight:700;margin-top:28px}
+.briefing-meta{display:grid;grid-template-columns:90px 1fr;gap:10px;font:18px/1.5 var(--mono)}
+.briefing-meta dd{margin:0;overflow-wrap:anywhere}
+.industry-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.industry-chart{margin:18px 0;padding:18px 12px;min-width:0}
+.industry-chart figcaption,.market-chart figcaption{font-weight:700;margin-bottom:26px;line-height:1.5}
+.industry-gradient{height:16px;position:relative;border-radius:10px;background:linear-gradient(90deg,#a9d7f0,#13603d);margin:0 8px 18px}
+.industry-marker{position:absolute;top:1px;transform:translateX(-50%);height:14px;width:14px;background:#005b87;border-radius:50%;box-shadow:0 3px 4px #0004}
+.industry-marker:last-child{background:#f5b431}
+.industry-scale-labels{display:flex;justify-content:space-between;gap:18px;font:18px var(--mono)}
+.industry-scale-labels>div{max-width:48%}.industry-scale-labels>div:last-child{text-align:right}
+.industry-scale-labels span{display:block;font:18px/1.5 var(--reading);margin-top:10px}
+.market-chart{margin:26px 0}.market-bars{display:flex;gap:40px;align-items:end;max-width:600px;border-bottom:1px solid #005b87;padding:10px 16px}
+.market-column{flex:1;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;font:18px/1.5 var(--mono)}
+.market-bar{width:60px;background:#a9d7f0}.market-column:nth-child(2) .market-bar{background:#13603d}
+@media(min-width:1001px){body[data-screen=documents] .notes-panel{height:180px;min-height:0}body[data-screen=documents] .notes-panel textarea{height:130px;max-height:130px}body[data-screen=documents] .fund-facts{margin-top:14px}body[data-screen=documents] .fact{margin-bottom:12px}}
+@media(max-width:1399px){#navigation{flex-wrap:wrap}#navigation button{min-width:0}.identity-card{gap:12px}.identity-card .founder-portrait{width:50px}}
+@media(max-width:1000px){.industry-chart-grid{grid-template-columns:1fr}body[data-screen=documents] .notes-panel{height:100px;min-height:100px;margin-top:0}body[data-screen=documents] .notes-panel textarea{height:64px;max-height:64px;padding:8px}body[data-screen=documents] .identity-card h1{font-size:30px}body[data-screen=documents] .document-tabs{margin-bottom:8px}}
+@media(max-width:560px){body[data-screen=documents] .case-sidebar{grid-template-columns:1fr 1fr}body[data-screen=documents] .identity-card h1{font-size:30px;overflow-wrap:anywhere}.briefing-meta{grid-template-columns:1fr;gap:4px}.briefing-meta dd{margin-bottom:10px}.document-tabs{display:flex}.document-tabs button{flex:1}body[data-screen=documents] .documents{padding:12px}.market-bars{gap:16px}body .checklist-head{font-size:18px}}
