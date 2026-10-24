@@ -58,17 +58,17 @@ My wider review and cross-checking contributions support the integration of thes
 
 ### **Integration**
 
-- ### **Rulebook and gameplay integration:** Coordinated with team members to review the rulebook, player journey, and gameplay mechanics, ensuring that the game flow was logical and aligned with the project’s financial education objectives.
+- **Rulebook and gameplay integration:** Coordinated with team members to review the rulebook, player journey, and gameplay mechanics, ensuring that the game flow was logical and aligned with the project’s financial education objectives.
 
-- ### **Framework and case content integration:** Worked with **Kiều Anh (Scenario–Dialogue Writer for Case 3\)** to standardize the structure and formatting of all three cases. I developed the reusable framework through Case 1 and Case 2, covering founder pitches, branching Q\&As, due diligence checklists, and case-level feedback. This framework also provided a reference for Kiều Anh when developing Case 3 \- Clinova AI.
+- **Framework and case content integration:** Worked with **Kiều Anh (Scenario–Dialogue Writer for Case 3\)** to standardize the structure and formatting of all three cases. I developed the reusable framework through Case 1 and Case 2, covering founder pitches, branching Q\&As, due diligence checklists, and case-level feedback. This framework also provided a reference for Kiều Anh when developing Case 3 \- Clinova AI.
 
-- ### **Evidence map and investment logic integration:** Collaborated with **Kiều Anh** to align the evidence map across Industry, Financial Statements, and Q\&As. Ensured that founder claims, financial information, and potential red flags were connected to supporting evidence, checklist criteria, and intended investment outcomes while preserving the distinct learning objectives of each case.
+- **Evidence map and investment logic integration:** Collaborated with **Kiều Anh** to align the evidence map across Industry, Financial Statements, and Q\&As. Ensured that founder claims, financial information, and potential red flags were connected to supporting evidence, checklist criteria, and intended investment outcomes while preserving the distinct learning objectives of each case.
 
-- ### **Financial data integration:** Worked with **Minh Nhật (Data & Logic)** to review financial information, industry data, and embedded red flags, ensuring that the financial assumptions were consistent with the case narratives and provided sufficient evidence for investment analysis.
+- **Financial data integration:** Worked with **Minh Nhật (Data & Logic)** to review financial information, industry data, and embedded red flags, ensuring that the financial assumptions were consistent with the case narratives and provided sufficient evidence for investment analysis.
 
-- ### **UI/UX integration:** Coordinated with **Minh Trang (UI/UX)** to review founder character representations and visual expressions, helping ensure that their appearance and emotional responses were consistent with the case context and dialogue.
+- **UI/UX integration:** Coordinated with **Minh Trang (UI/UX)** to review founder character representations and visual expressions, helping ensure that their appearance and emotional responses were consistent with the case context and dialogue.
 
-- ### **Game content and code integration:** Worked with **Phú Minh (Code)** and other team members to review game outputs and check whether case content, dialogue branches, and follow-up responses were consistent with the intended design.
+- **Game content and code integration:** Worked with **Phú Minh (Code)** and other team members to review game outputs and check whether case content, dialogue branches, and follow-up responses were consistent with the intended design.
 
 ### **Testing and revision**
 
