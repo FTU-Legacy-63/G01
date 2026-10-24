@@ -334,13 +334,13 @@ Fictional company profiles, financial statements, predetermined investment retur
 
 | Test group and input | Expected result | Recorded result and evidence |
 | ----- | ----- | ----- |
-| *Case registration and assets* Load all three cases. | Valid IDs, reachable dialogue, existing scripts and asset paths. | PASS \- campaign.test.cjs; clinova-update.test.cjs. |
-| *Portfolio calculations* Enumerate 672 legal investment combinations. | Allocations respect the shared fund; profit agrees with configured ROI. | PASS \- campaign.test.cjs. 672 combinations are inputs inside a test, not 672 additional tests. |
-| *Decision validation* Skip documents; leave checklist incomplete; omit choice; exceed funds or use invalid steps. | Direct Decision is allowed. Confirmation requires a complete checklist, a choice and valid allocation. | PASS \- campaign.test.cjs; clinova-update.test.cjs. |
-| *Persistence and report* Save/reload, corrupt storage, replay earlier decisions. | Valid progress restores; invalid state is handled; report availability and later decisions remain consistent. | PASS \- campaign.test.cjs. |
-| *Tutorial and rendering* Load slides asynchronously; press arrows; change text and tabs. | Eleven slides stay ordered; arrows work while the tutorial is open; scene images are reused. | PASS \- ui-render.test.cjs. |
-| *Loading and image failure* Duplicate requests; failed image; retry or continue. | Wait for image readiness, deduplicate requests, allow explicit recovery. | PASS \- image-loader.test.cjs; loading.test.cjs. |
-| *Audio lifecycle* Prepare tracks, switch scenes, mute, block autoplay, move slider. | Preparation does not play audio; scene/mute behavior and retries work; slider sounds are throttled. | PASS \- audio.test.cjs. Actual perceived latency was not measured. |
+| *Case registration and assets* Load all three cases. | Valid IDs, reachable dialogue, existing scripts and asset paths. | PASS \- campaign.test.cjs; clinova-update.test.cjs. |
+| *Portfolio calculations* Enumerate 672 legal investment combinations. | Allocations respect the shared fund; profit agrees with configured ROI. | PASS \- campaign.test.cjs. 672 combinations are inputs inside a test, not 672 additional tests. |
+| *Decision validation* Skip documents; leave checklist incomplete; omit choice; exceed funds or use invalid steps. | Direct Decision is allowed. Confirmation requires a complete checklist, a choice and valid allocation. | PASS \- campaign.test.cjs; clinova-update.test.cjs. |
+| *Persistence and report* Save/reload, corrupt storage, replay earlier decisions. | Valid progress restores; invalid state is handled; report availability and later decisions remain consistent. | PASS \- campaign.test.cjs. |
+| *Tutorial and rendering* Load slides asynchronously; press arrows; change text and tabs. | Eleven slides stay ordered; arrows work while the tutorial is open; scene images are reused. | PASS \- ui-render.test.cjs. |
+| *Loading and image failure* Duplicate requests; failed image; retry or continue. | Wait for image readiness, deduplicate requests, allow explicit recovery. | PASS \- image-loader.test.cjs; loading.test.cjs. |
+| *Audio lifecycle* Prepare tracks, switch scenes, mute, block autoplay, move slider. | Preparation does not play audio; scene/mute behavior and retries work; slider sounds are throttled. | PASS \- audio.test.cjs. Actual perceived latency was not measured. |
 
 13. **THE KNOWN STRENGTHS**   
 * **Clear learning objectives:** Bridges the gap between financial theory and practical due diligence by helping students assess start-ups, identify risks, and make structured investment decisions.  
