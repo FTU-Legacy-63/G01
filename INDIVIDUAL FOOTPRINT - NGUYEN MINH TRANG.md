@@ -89,5 +89,5 @@ My workflow involved continuous collaboration and iteration:
 
 The current UI system and Figma constraints are exclusively optimized for a 16:9 Desktop aspect ratio (1920x1080). This design choice was made to allow the side-by-side display of multiple financial data panels, which is crucial for the game's core mechanics. Consequently, the design lacks a fully responsive architecture, meaning the layout will break or the text will become illegible if a user attempts to play the game on mobile devices or vertically oriented tablets.
 
-Besides, while the visual architecture successfully reduces reading fatigue, the interface currently lacks contextual micro-interactions (such as hover-state Tooltips or an inline Glossary) for financial jargon. Since the target audience includes F0 investors, the absence of these on-screen explanations might still cause cognitive friction when they encounter complex terms like "Burn Rate" or "Implied Valuation".
+Besides, while the visual architecture successfully reduces reading fatigue, the interface currently lacks contextual micro-interactions (such as hover-state Tooltips or an inline Glossary) for financial jargon. The absence of these on-screen explanations might still cause cognitive friction when they encounter complex terms like "Burn Rate" or "Implied Valuation".
 
