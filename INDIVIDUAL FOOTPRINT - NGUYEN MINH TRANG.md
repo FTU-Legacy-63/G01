@@ -28,8 +28,7 @@ To achieve the project goals, I created the following specific deliverables:
   * **Error Paths**:  
     * E1 (Incomplete Checklist): Locks confirm button if Checklist is incomplete.  
     * E2 (Below Minimum Capital): Snaps slider back if pulled below minimum capital.  
-    * E3 (Invalid State Conflict): Disables slider automatically upon selecting "Reject".  
-    * E4 (Fund Depletion): Disables "Invest" if remaining fund balance is insufficient, guiding player to "Reject".  
+    * E3 (Invalid State Conflict): Disables slider automatically upon selecting "Reject".    
 * Built a fully clickable prototype featuring time-based UI states (e.g., "Game play \- Morning" and "Game play \- Evening" modes) to simulate a realistic working environment.
 
 **2.2. Tutorial & Onboarding Interface:**
